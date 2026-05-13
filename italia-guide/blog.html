@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Italy Travel Tips &amp; Guides Blog | La Dolce Vita</title>
+<meta name="description" content="Italy travel tips, guides, itineraries and local advice. Everything from visa requirements to the best gelato in Florence — all in one place.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .blog-header { background: var(--forest); padding: 80px 80px 70px; }
+  .blog-header .section-kicker { color: var(--gold-light); }
+  .blog-header .section-title { color: var(--white); }
+  .blog-header .section-subtitle { color: rgba(255,255,255,0.55); margin-bottom: 0; }
+
+  /* FILTER TABS */
+  .filter-bar { background: var(--cream); padding: 0 80px; border-bottom: 1px solid var(--cream-dark); display: flex; gap: 0; overflow-x: auto; }
+  .filter-tab { padding: 16px 22px; font-size: 13px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--text-muted); text-decoration: none; border-bottom: 2px solid transparent; white-space: nowrap; transition: color .2s, border-color .2s; }
+  .filter-tab:hover { color: var(--terracotta); }
+  .filter-tab.active { color: var(--terracotta); border-bottom-color: var(--terracotta); }
+
+  /* BLOG GRID */
+  .blog-layout { display: grid; grid-template-columns: 1fr 300px; gap: 48px; padding: 60px 80px; align-items: start; }
+  .blog-grid { display: flex; flex-direction: column; gap: 0; }
+
+  /* ARTICLE ROW */
+  .article-row { display: grid; grid-template-columns: 240px 1fr; gap: 24px; padding: 32px 0; border-bottom: 1px solid var(--cream-dark); text-decoration: none; color: inherit; transition: background .15s; }
+  .article-row:first-child { padding-top: 0; }
+  .article-row:hover .article-row-title { color: var(--terracotta); }
+  .article-row-img { border-radius: 3px; overflow: hidden; height: 160px; }
+  .article-row-img img { width: 100%; height: 100%; object-fit: cover; filter: brightness(.9) saturate(1.1); transition: transform .4s; }
+  .article-row:hover .article-row-img img { transform: scale(1.04); }
+  .article-row-content { display: flex; flex-direction: column; justify-content: center; gap: 10px; }
+  .article-row-tags { display: flex; gap: 8px; flex-wrap: wrap; }
+  .article-row-title { font-family: 'Cormorant Garamond', serif; font-size: 24px; color: var(--forest); line-height: 1.2; transition: color .2s; }
+  .article-row-excerpt { font-size: 13px; font-weight: 300; line-height: 1.7; color: var(--text-muted); }
+  .article-row-meta { font-size: 12px; color: var(--text-light); display: flex; gap: 14px; }
+
+  /* PAGINATION */
+  .pagination { display: flex; gap: 8px; margin-top: 48px; }
+  .page-btn { width: 38px; height: 38px; border: 1px solid var(--cream-dark); border-radius: 3px; display: flex; align-items: center; justify-content: center; font-size: 14px; text-decoration: none; color: var(--charcoal); transition: all .2s; }
+  .page-btn:hover, .page-btn.active { background: var(--terracotta); border-color: var(--terracotta); color: var(--white); }
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html" class="nav-logo">La Dolce <span>Vita</span></a>
+  <ul class="nav-links">
+    <li><a href="destinations.html">Destinations</a></li>
+    <li><a href="itineraries.html">Itineraries</a></li>
+    <li><a href="blog.html" class="active">Travel Tips</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="itineraries.html" class="nav-cta">Plan Your Trip</a></li>
+  </ul>
+</nav>
+
+<div class="breadcrumb">
+  <a href="index.html">Home</a> <span>›</span> Travel Tips &amp; Guides
+</div>
+
+<div class="blog-header">
+  <p class="section-kicker">The Blog</p>
+  <h1 class="section-title">Italy Travel Tips<br><em>&amp; Guides</em></h1>
+  <p class="section-subtitle">In-depth guides, honest reviews, and local insight — all written by people who've actually been there.</p>
+</div>
+
+<div class="filter-bar">
+  <a href="#" class="filter-tab active">All</a>
+  <a href="#" class="filter-tab">Rome</a>
+  <a href="#" class="filter-tab">Florence</a>
+  <a href="#" class="filter-tab">Venice</a>
+  <a href="#" class="filter-tab">Amalfi Coast</a>
+  <a href="#" class="filter-tab">Milan</a>
+  <a href="#" class="filter-tab">Itineraries</a>
+  <a href="#" class="filter-tab">Food &amp; Drink</a>
+  <a href="#" class="filter-tab">Budget Tips</a>
+  <a href="#" class="filter-tab">Transport</a>
+</div>
+
+<div class="blog-layout">
+
+  <!-- ARTICLES LIST -->
+  <main>
+    <div class="ad-zone ad-banner">Advertisement</div>
+
+    <div class="blog-grid">
+
+      <a href="article.html" class="article-row">
+        <div class="article-row-img"><img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=600&q=80" alt="Rome"></div>
+        <div class="article-row-content">
+          <div class="article-row-tags">
+            <span class="tag">Rome</span>
+            <span class="tag">Itinerary</span>
+          </div>
+          <h2 class="article-row-title">The Perfect 7-Day Rome Itinerary — From Ruins to Restaurants</h2>
+          <p class="article-row-excerpt">Everything you need to plan the ultimate week in Rome: the best order to see the sights, where to eat like a local, and the Vatican booking trick that saves hours.</p>
+          <div class="article-row-meta">
+            <span>May 2026</span><span>12 min read</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="article.html" class="article-row">
+        <div class="article-row-img"><img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=600&q=80" alt="Florence"></div>
+        <div class="article-row-content">
+          <div class="article-row-tags"><span class="tag">Florence</span><span class="tag">Art</span></div>
+          <h2 class="article-row-title">Florence in 3 Days: Art, Food &amp; the Tuscan Countryside</h2>
+          <p class="article-row-excerpt">Three perfectly structured days in Florence — from the Uffizi to the best bistecca in the city, plus a half-day Chianti wine tour.</p>
+          <div class="article-row-meta"><span>April 2026</span><span>8 min read</span></div>
+        </div>
+      </a>
+
+      <!-- AD inline -->
+      <div class="ad-zone" style="height:100px; border-radius:4px; margin:16px 0; font-size:12px;">Advertisement</div>
+
+      <a href="article.html" class="article-row">
+        <div class="article-row-img"><img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=600&q=80" alt="Venice"></div>
+        <div class="article-row-content">
+          <div class="article-row-tags"><span class="tag">Venice</span></div>
+          <h2 class="article-row-title">How to Visit Venice Without the Crowds (Yes, It's Possible)</h2>
+          <p class="article-row-excerpt">The simple scheduling trick that lets you experience Venice's canals in relative peace, even in peak summer.</p>
+          <div class="article-row-meta"><span>March 2026</span><span>6 min read</span></div>
+        </div>
+      </a>
+
+      <a href="article.html" class="article-row">
+        <div class="article-row-img"><img src="https://images.unsplash.com/photo-1534308143481-c55f00be8bd7?w=600&q=80" alt="Amalfi"></div>
+        <div class="article-row-content">
+          <div class="article-row-tags"><span class="tag">Amalfi Coast</span><span class="tag">Road Trip</span></div>
+          <h2 class="article-row-title">Amalfi Coast by Car: The Complete Driving Guide</h2>
+          <p class="article-row-excerpt">Narrow roads, wrong-way buses, and breathtaking views — everything you need to drive the Amalfi Coast without losing your nerve.</p>
+          <div class="article-row-meta"><span>March 2026</span><span>10 min read</span></div>
+        </div>
+      </a>
+
+      <a href="article.html" class="article-row">
+        <div class="article-row-img"><img src="https://images.unsplash.com/photo-1519923834699-ef0b7cde4712?w=600&q=80" alt="Milan"></div>
+        <div class="article-row-content">
+          <div class="article-row-tags"><span class="tag">Milan</span><span class="tag">Budget Tips</span></div>
+          <h2 class="article-row-title">Milan on a Budget: How to See the City Without the Splurge</h2>
+          <p class="article-row-excerpt">Free museums on Sunday, aperitivo hour that doubles as dinner, and why the best food in Milan isn't in the tourist districts.</p>
+          <div class="article-row-meta"><span>February 2026</span><span>7 min read</span></div>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="pagination">
+      <a href="#" class="page-btn active">1</a>
+      <a href="#" class="page-btn">2</a>
+      <a href="#" class="page-btn">3</a>
+      <a href="#" class="page-btn">→</a>
+    </div>
+  </main>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="ad-zone ad-sidebar">Advertisement</div>
+
+    <div class="sidebar-widget">
+      <h3>Popular Guides</h3>
+      <ul>
+        <li><a href="rome.html">Rome Travel Guide</a></li>
+        <li><a href="article.html">Vatican Skip-the-Line Tips</a></li>
+        <li><a href="article.html">Italy by Train — Full Guide</a></li>
+        <li><a href="article.html">Best Time to Visit Italy</a></li>
+        <li><a href="article.html">Italy Visa Guide</a></li>
+      </ul>
+    </div>
+
+    <div class="sidebar-widget">
+      <h3>Browse by City</h3>
+      <div style="display:flex; flex-wrap:wrap; gap:8px; padding-top:4px;">
+        <a href="rome.html" class="tag">Rome</a>
+        <a href="florence.html" class="tag">Florence</a>
+        <a href="venice.html" class="tag">Venice</a>
+        <a href="#" class="tag">Milan</a>
+        <a href="#" class="tag">Naples</a>
+        <a href="#" class="tag">Amalfi</a>
+        <a href="#" class="tag">Sicily</a>
+        <a href="#" class="tag">Turin</a>
+      </div>
+    </div>
+
+    <div class="ad-zone" style="height:250px; border-radius:4px; font-size:12px;">Advertisement</div>
+  </aside>
+
+</div>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">La Dolce <span>Vita</span></div>
+      <p class="footer-tagline">Italy's most comprehensive travel guide — crafted for curious travellers who want more than a checklist.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Destinations</h4>
+      <ul><li><a href="rome.html">Rome</a></li><li><a href="florence.html">Florence</a></li><li><a href="venice.html">Venice</a></li><li><a href="destinations.html">View All →</a></li></ul>
+    </div>
+    <div class="footer-col">
+      <h4>Plan Your Trip</h4>
+      <ul><li><a href="blog.html">Visa Guide</a></li><li><a href="itineraries.html">Itineraries</a></li><li><a href="blog.html">Transport</a></li></ul>
+    </div>
+    <div class="footer-col">
+      <h4>About</h4>
+      <ul><li><a href="about.html">About Us</a></li><li><a href="about.html">Contact</a></li></ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 La Dolce Vita Italy Travel Guide. All rights reserved.</p>
+    <p>Made with ❤️ for Italy lovers everywhere</p>
+  </div>
+</footer>
+
+</body>
+</html>
