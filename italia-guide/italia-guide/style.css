@@ -1,0 +1,128 @@
+/* ============================================================
+   LA DOLCE VITA — Shared Stylesheet
+   ============================================================ */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --terracotta: #C84B2F;
+  --terracotta-light: #E8846A;
+  --terracotta-pale: #F5DDD5;
+  --forest: #1E3A2A;
+  --forest-mid: #2D5A3D;
+  --cream: #F7F0E4;
+  --cream-dark: #EDE3D0;
+  --sand: #9A7B56;
+  --sand-light: #C4A882;
+  --charcoal: #2A2420;
+  --gold: #B8941E;
+  --gold-light: #D4AF37;
+  --white: #FEFCF8;
+  --text-muted: #6B6055;
+  --text-light: #9A8E85;
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: 'Outfit', sans-serif; background: var(--white); color: var(--charcoal); overflow-x: hidden; }
+
+/* ── TYPOGRAPHY ── */
+h1, h2, h3, h4 { font-family: 'Cormorant Garamond', serif; font-weight: 400; line-height: 1.15; }
+p { line-height: 1.75; }
+a { color: var(--terracotta); }
+img { max-width: 100%; display: block; }
+
+/* ── NAV ── */
+.site-nav {
+  position: sticky; top: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 18px 48px;
+  background: rgba(254,252,248,0.95); backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(184,148,30,0.15);
+}
+.nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 600; color: var(--forest); text-decoration: none; }
+.nav-logo span { color: var(--terracotta); font-style: italic; }
+.nav-links { display: flex; gap: 32px; list-style: none; align-items: center; }
+.nav-links a { font-size: 13px; letter-spacing: .07em; color: var(--charcoal); text-decoration: none; text-transform: uppercase; transition: color .2s; }
+.nav-links a:hover { color: var(--terracotta); }
+.nav-links .active { color: var(--terracotta); font-weight: 500; }
+.nav-cta { background: var(--terracotta) !important; color: var(--white) !important; padding: 8px 20px; border-radius: 2px; transition: background .2s !important; }
+.nav-cta:hover { background: var(--forest) !important; }
+
+/* ── BREADCRUMB ── */
+.breadcrumb { padding: 12px 80px; font-size: 13px; color: var(--text-muted); background: var(--cream); border-bottom: 1px solid var(--cream-dark); }
+.breadcrumb a { color: var(--text-muted); text-decoration: none; }
+.breadcrumb a:hover { color: var(--terracotta); }
+.breadcrumb span { margin: 0 8px; opacity: .5; }
+
+/* ── SECTION HELPERS ── */
+.section-kicker { font-size: 11px; font-weight: 600; letter-spacing: .2em; color: var(--terracotta); text-transform: uppercase; margin-bottom: 14px; }
+.section-title { font-size: 46px; color: var(--forest); margin-bottom: 12px; }
+.section-title em { font-style: italic; color: var(--sand); }
+.section-subtitle { font-size: 15px; font-weight: 300; color: var(--text-muted); max-width: 520px; margin-bottom: 48px; }
+
+/* ── BUTTONS ── */
+.btn-primary { display: inline-block; background: var(--terracotta); color: var(--white); padding: 13px 28px; border-radius: 3px; font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; text-decoration: none; transition: background .2s; }
+.btn-primary:hover { background: var(--forest); color: var(--white); }
+.btn-outline { display: inline-block; border: 1.5px solid var(--terracotta); color: var(--terracotta); padding: 12px 26px; border-radius: 3px; font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; text-decoration: none; transition: all .2s; }
+.btn-outline:hover { background: var(--terracotta); color: var(--white); }
+.btn-text { font-size: 13px; font-weight: 600; letter-spacing: .06em; color: var(--terracotta); text-transform: uppercase; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; transition: gap .2s; }
+.btn-text:hover { gap: 10px; color: var(--terracotta); }
+
+/* ── AD ZONES ── */
+/* These are placeholder zones — swap content with AdSense snippet after approval */
+.ad-zone {
+  background: var(--cream); border: 1.5px dashed var(--cream-dark);
+  border-radius: 4px; display: flex; align-items: center; justify-content: center;
+  color: var(--text-light); font-size: 12px; letter-spacing: .06em;
+  text-transform: uppercase; font-weight: 500;
+}
+.ad-banner { width: 100%; height: 90px; margin: 0 0 40px; }          /* Leaderboard 728×90 */
+.ad-rectangle { width: 100%; height: 250px; margin: 32px 0; }         /* Medium Rectangle 300×250 */
+.ad-sidebar { width: 300px; height: 600px; flex-shrink: 0; }          /* Half Page 300×600 */
+
+/* ── CARDS ── */
+.card { background: var(--white); border: 1px solid var(--cream-dark); border-radius: 4px; overflow: hidden; transition: transform .3s, box-shadow .3s; }
+.card:hover { transform: translateY(-5px); box-shadow: 0 20px 50px rgba(42,36,32,0.1); }
+.card-img { overflow: hidden; }
+.card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s; filter: brightness(.9) saturate(1.1); }
+.card:hover .card-img img { transform: scale(1.05); }
+.card-tag { position: absolute; top: 12px; left: 12px; background: var(--terracotta); color: var(--white); font-size: 10px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; padding: 4px 10px; border-radius: 2px; }
+.card-body { padding: 22px 24px; }
+.card-title { font-family: 'Cormorant Garamond', serif; font-size: 22px; color: var(--forest); margin-bottom: 8px; }
+.card-excerpt { font-size: 13px; font-weight: 300; line-height: 1.7; color: var(--text-muted); margin-bottom: 16px; }
+.card-meta { font-size: 12px; color: var(--text-light); display: flex; gap: 14px; align-items: center; }
+
+/* ── TAGS ── */
+.tag { display: inline-block; background: var(--terracotta-pale); color: var(--terracotta); font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; padding: 4px 10px; border-radius: 2px; text-decoration: none; }
+.tag:hover { background: var(--terracotta); color: var(--white); }
+
+/* ── FOOTER ── */
+.site-footer { background: var(--charcoal); padding: 60px 80px 36px; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+.footer-brand { font-family: 'Cormorant Garamond', serif; font-size: 26px; color: var(--white); margin-bottom: 14px; }
+.footer-brand span { color: var(--terracotta-light); font-style: italic; }
+.footer-tagline { font-size: 13px; font-weight: 300; line-height: 1.7; color: rgba(255,255,255,0.4); max-width: 240px; }
+.footer-col h4 { font-family: 'Outfit', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: .14em; color: rgba(255,255,255,0.45); text-transform: uppercase; margin-bottom: 16px; }
+.footer-col ul { list-style: none; }
+.footer-col li { margin-bottom: 9px; }
+.footer-col a { font-size: 14px; font-weight: 300; color: rgba(255,255,255,0.5); text-decoration: none; transition: color .2s; }
+.footer-col a:hover { color: var(--terracotta-light); }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; }
+.footer-bottom p { font-size: 12px; color: rgba(255,255,255,0.25); }
+
+/* ── UTILITY ── */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 48px; }
+.section-pad { padding: 80px 80px; }
+.text-center { text-align: center; }
+.text-center .section-subtitle { margin-left: auto; margin-right: auto; }
+
+/* ── LAYOUT: CONTENT + SIDEBAR ── */
+.content-layout { display: grid; grid-template-columns: 1fr 300px; gap: 48px; padding: 60px 80px; align-items: start; }
+.sidebar { display: flex; flex-direction: column; gap: 32px; position: sticky; top: 80px; }
+.sidebar-widget { background: var(--cream); border-radius: 4px; padding: 24px; border: 1px solid var(--cream-dark); }
+.sidebar-widget h3 { font-family: 'Cormorant Garamond', serif; font-size: 20px; color: var(--forest); margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid var(--cream-dark); }
+.sidebar-widget ul { list-style: none; }
+.sidebar-widget li { padding: 8px 0; border-bottom: 1px solid var(--cream-dark); font-size: 14px; }
+.sidebar-widget li:last-child { border-bottom: none; }
+.sidebar-widget a { color: var(--charcoal); text-decoration: none; }
+.sidebar-widget a:hover { color: var(--terracotta); }
