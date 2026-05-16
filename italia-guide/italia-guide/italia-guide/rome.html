@@ -68,11 +68,11 @@
   .food-photo-label p { font-size:11px; color:rgba(255,255,255,.65); font-weight:300; }
 
   /* DAY BLOCKS */
-  .day-block { border:1px solid var(--cream-dark); border-radius:4px; overflow:hidden; margin:18px 0; background:var(--white); }
-  .day-block-img { height:200px; overflow:hidden; }
-  .day-block-img img { width:100%; height:100%; object-fit:cover; filter:brightness(.82) saturate(1.1); transition:transform .5s; }
+  .day-block { border:1px solid var(--cream-dark); border-radius:4px; overflow:hidden; margin:18px 0; background:var(--white); display:grid !important; grid-template-columns:320px 1fr !important; }
+  .day-block-img { height:auto !important; overflow:hidden; aspect-ratio:4/3; }
+  .day-block-img img { width:100%; height:100%; object-fit:cover; filter:brightness(.82) saturate(1.1); transition:transform .5s; display:block; }
   .day-block:hover .day-block-img img { transform:scale(1.04); }
-  .day-block-body { padding:22px 24px; }
+  .day-block-body { padding:28px 32px; display:flex; flex-direction:column; justify-content:center; }
   .day-label { font-size:11px; font-weight:700; letter-spacing:.15em; color:var(--terracotta); text-transform:uppercase; margin-bottom:5px; }
   .day-block h3 { font-family:'Cormorant Garamond',serif; font-size:22px; color:var(--forest); margin-bottom:10px; }
   .day-block p { font-size:14px; font-weight:300; line-height:1.8; color:var(--charcoal); margin:0; }
