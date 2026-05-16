@@ -24,23 +24,23 @@
   .fact-divider { width:1px; height:36px; background:rgba(255,255,255,.1); margin-right:36px; flex-shrink:0; }
 
   /* PHOTO GALLERY STRIP */
-  .photo-strip { display:grid;grid-template-columns:1fr 1fr 1fr; gap:4px; height:280px; }
+  .photo-strip { display:grid; grid-template-columns:1fr 1fr 1fr; gap:4px; height:280px; }
   .photo-strip-item { overflow:hidden; position:relative; }
   .photo-strip-item img { width:100%; height:100%; object-fit:cover; transition:transform .6s; filter:brightness(.88) saturate(1.1); }
   .photo-strip-item:hover img { transform:scale(1.05); }
   .photo-strip-label { position:absolute; bottom:10px; left:12px; background:rgba(20,35,20,.8); backdrop-filter:blur(4px); padding:4px 10px; border-radius:2px; font-size:10px; font-weight:600; letter-spacing:.08em; color:rgba(255,255,255,.9); text-transform:uppercase; }
 
-  /* ATTRACTION CARDS WITH IMAGES */
-  .attraction-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:20px; margin:28px 0; }
-  .attraction-card { border-radius:4px; overflow:hidden; border:1px solid var(--cream-dark); background:var(--white); transition:transform .3s, box-shadow .3s; }
-  .attraction-card:hover { transform:translateY(-4px); box-shadow:0 16px 40px rgba(42,36,32,.1); }
-  .attraction-card-img { height:180px; overflow:hidden; position:relative; }
-  .attraction-card-img img { width:100%; height:100%; object-fit:cover; transition:transform .5s; filter:brightness(.88) saturate(1.1); }
-  .attraction-card:hover .attraction-card-img img { transform:scale(1.06); }
-  .attraction-card-num { position:absolute; top:12px; left:12px; background:var(--terracotta); color:var(--white); font-family:'Cormorant Garamond',serif; font-size:22px; width:36px; height:36px; border-radius:50%; display:flex; align-items:center; justify-content:center; }
-  .attraction-card-body { padding:18px 20px; }
-  .attraction-name { font-family:'Cormorant Garamond',serif; font-size:20px; color:var(--forest); margin-bottom:7px; }
-  .attraction-desc { font-size:13px; font-weight:300; line-height:1.65; color:var(--text-muted); }
+  /* ATTRACTION CARDS WITH IMAGES — horizontal layout */
+  .attraction-grid { display:flex !important; flex-direction:column !important; gap:16px; margin:28px 0; }
+  .attraction-card { display:grid !important; grid-template-columns:340px 1fr !important; border-radius:6px; overflow:hidden; border:1px solid var(--cream-dark); background:var(--white); transition:transform .3s, box-shadow .3s; }
+  .attraction-card:hover { transform:translateY(-3px); box-shadow:0 14px 36px rgba(42,36,32,.11); }
+  .attraction-card-img { height:auto !important; position:relative !important; overflow:hidden !important; aspect-ratio:16/10; }
+  .attraction-card-img img { width:100% !important; height:100% !important; object-fit:cover !important; transition:transform .5s; filter:brightness(.88) saturate(1.1); display:block; }
+  .attraction-card:hover .attraction-card-img img { transform:scale(1.05); }
+  .attraction-card-num { position:absolute; top:12px; left:12px; background:var(--terracotta); color:var(--white); font-family:'Cormorant Garamond',serif; font-size:22px; width:36px; height:36px; border-radius:50%; display:flex; align-items:center; justify-content:center; z-index:1; }
+  .attraction-card-body { padding:24px 28px; display:flex; flex-direction:column; justify-content:center; }
+  .attraction-name { font-family:'Cormorant Garamond',serif; font-size:24px; color:var(--forest); margin-bottom:10px; }
+  .attraction-desc { font-size:14px; font-weight:300; line-height:1.75; color:var(--text-muted); }
 
   /* FULL-WIDTH PHOTO BREAK */
   .photo-break { position:relative; height:400px; overflow:hidden; margin:48px 0; }
@@ -68,11 +68,11 @@
   .food-photo-label p { font-size:11px; color:rgba(255,255,255,.65); font-weight:300; }
 
   /* DAY BLOCKS */
-  .day-block { border:1px solid var(--cream-dark); border-radius:4px; overflow:hidden; margin:18px 0; background:var(--white); }
-  .day-block-img { height:200px; overflow:hidden; }
-  .day-block-img img { width:100%; height:100%; object-fit:cover; filter:brightness(.82) saturate(1.1); transition:transform .5s; }
+  .day-block { border:1px solid var(--cream-dark); border-radius:4px; overflow:hidden; margin:18px 0; background:var(--white); display:grid !important; grid-template-columns:320px 1fr !important; }
+  .day-block-img { height:auto !important; overflow:hidden; aspect-ratio:4/3; }
+  .day-block-img img { width:100%; height:100%; object-fit:cover; filter:brightness(.82) saturate(1.1); transition:transform .5s; display:block; }
   .day-block:hover .day-block-img img { transform:scale(1.04); }
-  .day-block-body { padding:22px 24px; }
+  .day-block-body { padding:28px 32px; display:flex; flex-direction:column; justify-content:center; }
   .day-label { font-size:11px; font-weight:700; letter-spacing:.15em; color:var(--terracotta); text-transform:uppercase; margin-bottom:5px; }
   .day-block h3 { font-family:'Cormorant Garamond',serif; font-size:22px; color:var(--forest); margin-bottom:10px; }
   .day-block p { font-size:14px; font-weight:300; line-height:1.8; color:var(--charcoal); margin:0; }
@@ -123,7 +123,7 @@
 
 <!-- HERO -->
 <div class="dest-hero">
-  <img src="https://images.unsplash.com/photo-1529260830199-42c24126f198?w=1600&q=85" alt="Rome, Italy">
+  <img src="images/rome-hero.jpg" alt="Rome, Italy">
   <div class="dest-hero-overlay">
     <h1>Rome<br><em>Travel Guide</em></h1>
     <div class="dest-hero-meta">
@@ -204,7 +204,7 @@
       <div class="attraction-grid">
         <div class="attraction-card">
           <div class="attraction-card-img">
-            <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=600&q=85" alt="Colosseum Rome" style="object-position:center 40%;">
+            <img src="images/rome-hero.jpg" alt="Colosseum Rome" style="object-position:center 40%;">
             <div class="attraction-card-num">1</div>
           </div>
           <div class="attraction-card-body">
@@ -215,7 +215,7 @@
 
         <div class="attraction-card">
           <div class="attraction-card-img">
-            <img src="https://images.unsplash.com/photo-1529260830199-42c24126f198?w=600&q=85" alt="Vatican Rome" style="object-position:center 25%;">
+            <img src="images/rome-vatican.jpg" alt="Vatican Rome" style="object-position:center 25%;">
             <div class="attraction-card-num">2</div>
           </div>
           <div class="attraction-card-body">
@@ -237,7 +237,7 @@
 
         <div class="attraction-card">
           <div class="attraction-card-img">
-            <img src="images/rome-borghese.jpg"alt="Borghese Gallery gardens" style="object-position:center 40%;">
+            <img src="images/rome-borghese.jpg" alt="Borghese Gallery gardens" style="object-position:center 40%;">
             <div class="attraction-card-num">4</div>
           </div>
           <div class="attraction-card-body">
@@ -251,7 +251,7 @@
 
       <!-- PHOTO BREAK -->
       <div class="photo-break">
-        <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=1200&q=85" alt="Colosseum Rome evening" style="object-position:center 45%;">
+        <img src="images/rome-hero.jpg" alt="Colosseum Rome evening" style="object-position:center 45%;">
         <div class="photo-break-caption">
           <h3>Ancient Rome — 2,000 Years of History</h3>
           <p>The Roman Forum, Palatine Hill and Colosseum are covered by one combined ticket — plan at least 4 hours to do all three justice.</p>
@@ -263,7 +263,7 @@
 
       <div class="day-block">
         <div class="day-block-img">
-          <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=900&q=85" alt="Colosseum Day 1" style="object-position:center 30%;">
+          <img src="images/rome-hero.jpg" alt="Colosseum Day 1" style="object-position:center 30%;">
         </div>
         <div class="day-block-body">
           <div class="day-label">Day 1</div>
@@ -274,7 +274,7 @@
 
       <div class="day-block">
         <div class="day-block-img">
-          <img src="https://images.unsplash.com/photo-1529260830199-42c24126f198?w=900&q=85" alt="Vatican Day 2" style="object-position:center 20%;">
+          <img src="images/rome-vatican.jpg" alt="Vatican Day 2" style="object-position:center 20%;">
         </div>
         <div class="day-block-body">
           <div class="day-label">Day 2</div>
@@ -285,7 +285,7 @@
 
       <div class="day-block">
         <div class="day-block-img">
-          <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=900&q=85" alt="Baroque Rome Day 3" style="object-position:center 60%;">
+          <img src="images/rome-trevi.jpg" alt="Baroque Rome Day 3" style="object-position:center 60%;">
         </div>
         <div class="day-block-body">
           <div class="day-label">Day 3</div>
@@ -301,7 +301,7 @@
 
       <div class="day-block">
         <div class="day-block-img">
-          <img src="https://images.unsplash.com/photo-1499678329028-101435549a4e?w=900&q=85" alt="Borghese Day 4" style="object-position:center 35%;">
+          <img src="images/rome-borghese.jpg" alt="Borghese Day 4" style="object-position:center 35%;">
         </div>
         <div class="day-block-body">
           <div class="day-label">Day 4 &amp; 5</div>
@@ -318,28 +318,28 @@
 
       <div class="food-photo-grid">
         <div class="food-photo-card">
-          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=85" alt="Carbonara pasta Rome" style="object-position:center center;">
+          <img src="images/rome-food.jpg" alt="Carbonara pasta Rome" style="object-position:center center;">
           <div class="food-photo-label">
             <h4>Carbonara</h4>
             <p>Guanciale, egg yolk, black pepper. Never cream.</p>
           </div>
         </div>
         <div class="food-photo-card">
-          <img src="https://images.unsplash.com/photo-1529260830199-42c24126f198?w=600&q=85" alt="Rome food scene" style="object-position:center 70%;">
+          <img src="images/rome-vatican.jpg" alt="Rome food scene" style="object-position:center 70%;">
           <div class="food-photo-label">
             <h4>Trattoria Culture</h4>
             <p>Family-run restaurants in Trastevere &amp; Testaccio.</p>
           </div>
         </div>
         <div class="food-photo-card">
-          <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=600&q=85" alt="Aperitivo Rome" style="object-position:center 55%;">
+          <img src="images/rome-hero.jpg" alt="Aperitivo Rome" style="object-position:center 55%;">
           <div class="food-photo-label">
             <h4>Aperitivo Hour</h4>
             <p>Campari Soda or Negroni, 6–8pm, every evening.</p>
           </div>
         </div>
         <div class="food-photo-card">
-          <img src="https://images.unsplash.com/photo-1499678329028-101435549a4e?w=600&q=85" alt="Gelato Rome" style="object-position:center 20%;">
+          <img src="images/rome-borghese.jpg" alt="Gelato Rome" style="object-position:center 20%;">
           <div class="food-photo-label">
             <h4>Roman Gelato</h4>
             <p>Lids on containers = the real artisan gelateria.</p>
@@ -357,7 +357,7 @@
       <!-- INLINE MEDIA: Trastevere -->
       <div class="inline-media">
         <div class="inline-media-img">
-          <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=700&q=85" alt="Trastevere Rome neighbourhood" style="object-position:center 40%;">
+          <img src="images/rome-trastevere.jpg" alt="Trastevere Rome neighbourhood" style="object-position:center 40%;">
         </div>
         <div class="inline-media-text">
           <h3>Trastevere — Rome After Dark</h3>
@@ -388,11 +388,11 @@
       <h3 style="font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--forest);margin-bottom:24px;">More Italy Guides</h3>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
         <a href="florence.html" style="display:flex;gap:14px;padding:16px;border:1px solid var(--cream-dark);border-radius:4px;text-decoration:none;color:inherit;">
-          <div style="width:80px;height:80px;border-radius:3px;overflow:hidden;flex-shrink:0;"><img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=200&q=80" style="width:100%;height:100%;object-fit:cover;" alt="Florence"></div>
+          <div style="width:80px;height:80px;border-radius:3px;overflow:hidden;flex-shrink:0;"><img src="images/florence-hero.jpg" style="width:100%;height:100%;object-fit:cover;" alt="Florence"></div>
           <div><p style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--forest);margin-bottom:5px;line-height:1.3;">Florence Travel Guide</p><p style="font-size:12px;color:var(--text-light);">The Uffizi, the Duomo &amp; Tuscany</p></div>
         </a>
         <a href="venice.html" style="display:flex;gap:14px;padding:16px;border:1px solid var(--cream-dark);border-radius:4px;text-decoration:none;color:inherit;">
-          <div style="width:80px;height:80px;border-radius:3px;overflow:hidden;flex-shrink:0;"><img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=200&q=80" style="width:100%;height:100%;object-fit:cover;" alt="Venice"></div>
+          <div style="width:80px;height:80px;border-radius:3px;overflow:hidden;flex-shrink:0;"><img src="images/venice-hero.jpg" style="width:100%;height:100%;object-fit:cover;" alt="Venice"></div>
           <div><p style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--forest);margin-bottom:5px;line-height:1.3;">Venice Travel Guide</p><p style="font-size:12px;color:var(--text-light);">Canals, gondolas &amp; la Serenissima</p></div>
         </a>
       </div>
