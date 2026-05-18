@@ -1,351 +1,870 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Florence Travel Guide 2026 — Things to Do, Tips & Itinerary | La Dolce Vita</title>
-<meta name="description" content="The complete Florence travel guide for 2026. Uffizi Gallery, the Duomo, Michelangelo's David, Tuscany day trips, and the best food in the city.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<style>
-  .dest-hero{position:relative;height:560px;overflow:hidden}.dest-hero img{width:100%;height:100%;object-fit:cover;object-position:center 40%;filter:brightness(.6) saturate(1.1)}.dest-hero-overlay{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:64px 80px;background:linear-gradient(to top,rgba(20,35,20,.88) 0%,transparent 55%)}.dest-hero h1{font-family:'Cormorant Garamond',serif;font-size:80px;font-weight:300;color:var(--white);line-height:1;margin-bottom:14px}.dest-hero h1 em{font-style:italic;color:var(--terracotta-light)}.dest-hero-meta{display:flex;gap:28px}.dest-hero-meta span{font-size:13px;color:rgba(255,255,255,.7)}
-  .quick-facts{background:var(--forest);padding:26px 80px;display:flex;gap:0;align-items:center;overflow-x:auto}.fact{display:flex;flex-direction:column;gap:3px;padding:0 36px 0 0}.fact-label{font-size:10px;font-weight:600;letter-spacing:.12em;color:rgba(255,255,255,.38);text-transform:uppercase}.fact-value{font-size:14px;font-weight:500;color:var(--white)}.fact-divider{width:1px;height:36px;background:rgba(255,255,255,.1);margin-right:36px;flex-shrink:0}
-  .photo-strip{display:grid;grid-template-columns:1fr 1fr 2fr;gap:4px;height:280px}.photo-strip-item{overflow:hidden;position:relative}.photo-strip-item img{width:100%;height:100%;object-fit:cover;transition:transform .6s;filter:brightness(.85) saturate(1.15)}.photo-strip-item:hover img{transform:scale(1.05)}.photo-strip-label{position:absolute;bottom:10px;left:12px;background:rgba(20,35,20,.8);backdrop-filter:blur(4px);padding:4px 10px;border-radius:2px;font-size:10px;font-weight:600;letter-spacing:.08em;color:rgba(255,255,255,.9);text-transform:uppercase}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amalfi Coast Travel Guide 2026 — Things to Do, Tips & Itinerary | La Dolce Vita</title>
+  <meta name="description" content="The complete Amalfi Coast travel guide for 2026. Positano, Ravello, boat trips, hiking the Path of the Gods, and the best food on Italy's most dramatic coastline." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet" />
+  <style>
+    /* ── Reset & Tokens ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --cream:   #faf7f2;
+      --ink:     #1a1612;
+      --muted:   #6b6560;
+      --accent:  #2563a8;
+      --accent2: #c0392b;
+      --gold:    #b8860b;
+      --border:  #e2ddd7;
+      --card-bg: #ffffff;
+      --max:     1100px;
+      --r:       6px;
+    }
 
-  /* ATTRACTION CARDS — horizontal layout */
-  .attraction-grid{display:flex !important;flex-direction:column !important;gap:16px;margin:28px 0}
-  .attraction-card{display:grid !important;grid-template-columns:340px 1fr !important;border-radius:6px;overflow:hidden;border:1px solid var(--cream-dark);background:var(--white);transition:transform .3s,box-shadow .3s}
-  .attraction-card:hover{transform:translateY(-3px);box-shadow:0 14px 36px rgba(42,36,32,.11)}
-  .attraction-card-img{height:auto !important;position:relative !important;overflow:hidden !important;aspect-ratio:16/10}
-  .attraction-card-img img{width:100% !important;height:100% !important;object-fit:cover !important;transition:transform .5s;filter:brightness(.88) saturate(1.1);display:block}
-  .attraction-card:hover .attraction-card-img img{transform:scale(1.05)}
-  .attraction-card-num{position:absolute;top:12px;left:12px;background:var(--terracotta);color:var(--white);font-family:'Cormorant Garamond',serif;font-size:22px;width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:1}
-  .attraction-card-body{padding:24px 28px;display:flex;flex-direction:column;justify-content:center}
-  .attraction-name{font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--forest);margin-bottom:10px}
-  .attraction-desc{font-size:14px;font-weight:300;line-height:1.75;color:var(--text-muted)}
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Source Sans 3', sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      font-size: 17px;
+      line-height: 1.7;
+    }
 
-  .photo-break{position:relative;height:400px;overflow:hidden;margin:48px 0}.photo-break img{width:100%;height:100%;object-fit:cover;filter:brightness(.65) saturate(1.15)}.photo-break-caption{position:absolute;bottom:0;left:0;right:0;padding:28px 36px;background:linear-gradient(to top,rgba(20,35,20,.88),transparent)}.photo-break-caption h3{font-family:'Cormorant Garamond',serif;font-size:32px;color:var(--white);font-weight:300;margin-bottom:6px}.photo-break-caption p{font-size:13px;color:rgba(255,255,255,.65);font-weight:300;max-width:480px}
-  .inline-media{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center;margin:36px 0}.inline-media.reverse{direction:rtl}.inline-media.reverse>*{direction:ltr}.inline-media-img{border-radius:4px;overflow:hidden;height:280px}.inline-media-img img{width:100%;height:100%;object-fit:cover;filter:brightness(.88) saturate(1.1)}.inline-media-text h3{font-family:'Cormorant Garamond',serif;font-size:26px;color:var(--forest);margin-bottom:12px}.inline-media-text p{font-size:14px;font-weight:300;line-height:1.85;color:var(--charcoal);margin-bottom:12px}
-  .food-photo-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:28px 0}.food-photo-card{border-radius:4px;overflow:hidden;position:relative;height:200px}.food-photo-card img{width:100%;height:100%;object-fit:cover;filter:brightness(.72) saturate(1.2);transition:transform .5s}.food-photo-card:hover img{transform:scale(1.05)}.food-photo-label{position:absolute;bottom:0;left:0;right:0;padding:16px;background:linear-gradient(to top,rgba(20,35,20,.85),transparent)}.food-photo-label h4{font-family:'Cormorant Garamond',serif;font-size:19px;color:var(--white);margin-bottom:3px}.food-photo-label p{font-size:11px;color:rgba(255,255,255,.65);font-weight:300}
+    /* ── Nav ── */
+    nav {
+      background: var(--ink);
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 58px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-brand {
+      font-family: 'Playfair Display', serif;
+      color: var(--cream);
+      font-size: 1.2rem;
+      text-decoration: none;
+      letter-spacing: .04em;
+    }
+    .nav-links { display: flex; gap: 1.5rem; list-style: none; }
+    .nav-links a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: .85rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      transition: color .2s;
+    }
+    .nav-links a:hover { color: #fff; }
 
-  /* DAY BLOCKS — horizontal layout */
-  .day-block{border:1px solid var(--cream-dark);border-radius:4px;overflow:hidden;margin:18px 0;background:var(--white);display:grid !important;grid-template-columns:320px 1fr !important}
-  .day-block-img{height:auto !important;overflow:hidden;aspect-ratio:4/3}
-  .day-block-img img{width:100%;height:100%;object-fit:cover;filter:brightness(.82) saturate(1.1);transition:transform .5s;display:block}
-  .day-block:hover .day-block-img img{transform:scale(1.04)}
-  .day-block-body{padding:28px 32px;display:flex;flex-direction:column;justify-content:center}
-  .day-label{font-size:11px;font-weight:700;letter-spacing:.15em;color:var(--terracotta);text-transform:uppercase;margin-bottom:5px}
-  .day-block h3{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--forest);margin-bottom:10px}
-  .day-block p{font-size:14px;font-weight:300;line-height:1.8;color:var(--charcoal);margin:0}
+    /* ── Hero ── */
+    .hero {
+      position: relative;
+      height: 520px;
+      overflow: hidden;
+    }
+    .hero img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center 60%;
+    }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,.15) 0%, rgba(0,0,0,.55) 100%);
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: flex-end;
+      padding-bottom: 3rem;
+      text-align: center;
+    }
+    .hero-eyebrow {
+      color: rgba(255,255,255,.75);
+      font-size: .8rem;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      margin-bottom: .5rem;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      color: #fff;
+      line-height: 1.15;
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: #f0dfa0;
+    }
+    .hero-sub {
+      color: rgba(255,255,255,.8);
+      font-size: .95rem;
+      margin-top: .6rem;
+    }
+    .hero-badges {
+      display: flex; gap: 1rem; flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 1.2rem;
+    }
+    .badge {
+      background: rgba(255,255,255,.18);
+      border: 1px solid rgba(255,255,255,.35);
+      color: #fff;
+      border-radius: 20px;
+      padding: .3rem .9rem;
+      font-size: .8rem;
+      backdrop-filter: blur(4px);
+    }
 
-  .tip-box{background:var(--terracotta-pale);border-left:3px solid var(--terracotta);border-radius:0 4px 4px 0;padding:18px 24px;margin:28px 0}.tip-box strong{display:block;font-size:11px;font-weight:700;letter-spacing:.12em;color:var(--terracotta);text-transform:uppercase;margin-bottom:8px}.tip-box p{font-size:14px;color:var(--charcoal);margin:0;line-height:1.7}
-  .info-box{background:var(--cream);border:1px solid var(--cream-dark);border-radius:4px;padding:26px 30px;margin:28px 0}.info-box h4{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--forest);margin-bottom:14px}.info-box dl{display:grid;grid-template-columns:auto 1fr;gap:8px 24px}.info-box dt{font-size:13px;font-weight:600;color:var(--text-muted)}.info-box dd{font-size:13px;color:var(--charcoal)}
-  .toc{background:var(--cream);border:1px solid var(--cream-dark);border-radius:4px;padding:26px 30px;margin-bottom:36px}.toc h3{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--forest);margin-bottom:14px}.toc ol{padding-left:18px}.toc li{font-size:14px;padding:5px 0}.toc a{color:var(--terracotta);text-decoration:none}.toc a:hover{text-decoration:underline}
-  .article-body h2{font-family:'Cormorant Garamond',serif;font-size:36px;color:var(--forest);margin:44px 0 18px;padding-top:44px;border-top:1px solid var(--cream-dark)}.article-body h2:first-child{border-top:none;padding-top:0;margin-top:0}.article-body h3{font-family:'Cormorant Garamond',serif;font-size:23px;color:var(--forest);margin:28px 0 10px}.article-body p{font-size:15px;font-weight:300;line-height:1.9;color:var(--charcoal);margin-bottom:18px}.article-body ul{padding-left:22px;margin-bottom:18px}.article-body li{font-size:15px;font-weight:300;line-height:1.85;color:var(--charcoal);margin-bottom:7px}.article-body strong{font-weight:600}
-  .day-trips-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:24px 0}.day-trip-card{border-radius:4px;overflow:hidden;border:1px solid var(--cream-dark);text-decoration:none;color:inherit;display:block;transition:transform .3s,box-shadow .3s}.day-trip-card:hover{transform:translateY(-4px);box-shadow:0 14px 36px rgba(42,36,32,.1)}.day-trip-img{height:150px;overflow:hidden}.day-trip-img img{width:100%;height:100%;object-fit:cover;filter:brightness(.85) saturate(1.1);transition:transform .4s}.day-trip-card:hover .day-trip-img img{transform:scale(1.05)}.day-trip-body{padding:14px 16px}.day-trip-body h4{font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--forest);margin-bottom:5px}.day-trip-body p{font-size:12px;font-weight:300;color:var(--text-muted);line-height:1.6;margin:0}
-</style>
+    /* ── Breadcrumb ── */
+    .breadcrumb {
+      max-width: var(--max);
+      margin: 1.2rem auto .4rem;
+      padding: 0 1.5rem;
+      font-size: .82rem;
+      color: var(--muted);
+    }
+    .breadcrumb a { color: var(--accent); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    /* ── Layout ── */
+    .container {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 1.5rem 4rem;
+      display: grid;
+      grid-template-columns: 1fr 280px;
+      gap: 3rem;
+      align-items: start;
+    }
+    main { min-width: 0; }
+    aside { position: sticky; top: 70px; }
+
+    /* ── Quick Facts ── */
+    .quick-facts {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+      gap: .75rem;
+      margin: 1.5rem 0 2.5rem;
+    }
+    .fact-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+      padding: .8rem 1rem;
+    }
+    .fact-label {
+      font-size: .7rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: .2rem;
+    }
+    .fact-value {
+      font-weight: 600;
+      font-size: .95rem;
+      color: var(--ink);
+    }
+
+    /* ── Lang Toggle ── */
+    .lang-toggle {
+      display: inline-flex;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      overflow: hidden;
+      margin-bottom: 2rem;
+    }
+    .lang-btn {
+      padding: .35rem 1rem;
+      font-size: .82rem;
+      cursor: pointer;
+      background: none;
+      border: none;
+      color: var(--muted);
+      transition: background .2s, color .2s;
+    }
+    .lang-btn.active {
+      background: var(--ink);
+      color: #fff;
+    }
+    .zh { display: none; }
+    body.zh-mode .en { display: none; }
+    body.zh-mode .zh { display: block; }
+    body.zh-mode .zh-inline { display: inline; }
+    body.zh-mode .en-inline { display: none; }
+    .zh-inline { display: none; }
+    .en-inline { display: inline; }
+
+    /* ── Section headings ── */
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      margin: 2.5rem 0 1rem;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: .5rem;
+    }
+    h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem;
+      margin: 1.5rem 0 .5rem;
+    }
+    p { margin-bottom: 1rem; color: #2a2520; }
+
+    /* ── Attraction Cards ── */
+    .attr-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.25rem;
+      margin: 1.5rem 0;
+    }
+    .attr-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+      overflow: hidden;
+    }
+    .attr-card img {
+      width: 100%; height: 185px;
+      object-fit: cover;
+      display: block;
+    }
+    .attr-body { padding: 1rem 1.1rem 1.2rem; }
+    .attr-num {
+      font-size: .7rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .attr-card h3 { margin: .2rem 0 .5rem; font-size: 1.05rem; }
+    .attr-card p { font-size: .9rem; margin: 0; }
+
+    /* ── Day Itinerary ── */
+    .day-block {
+      border-left: 3px solid var(--accent);
+      padding-left: 1.2rem;
+      margin: 1.5rem 0 2rem;
+    }
+    .day-label {
+      font-size: .75rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .day-block h3 { margin: .2rem 0 .6rem; }
+    .day-block img {
+      width: 100%;
+      border-radius: var(--r);
+      margin-bottom: .8rem;
+      max-height: 300px;
+      object-fit: cover;
+    }
+
+    /* ── Tip Box ── */
+    .tip-box {
+      background: #f0f5ff;
+      border-left: 4px solid var(--accent);
+      border-radius: 0 var(--r) var(--r) 0;
+      padding: 1rem 1.2rem;
+      margin: 1.5rem 0;
+      font-size: .93rem;
+    }
+    .tip-box strong { display: block; margin-bottom: .3rem; color: var(--accent); }
+
+    /* ── Food Grid ── */
+    .food-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+      margin: 1.2rem 0;
+    }
+    .food-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+      overflow: hidden;
+      text-align: center;
+    }
+    .food-card img { width: 100%; height: 130px; object-fit: cover; }
+    .food-card-body { padding: .7rem .8rem; }
+    .food-card h4 { font-family: 'Playfair Display', serif; font-size: 1rem; margin-bottom: .25rem; }
+    .food-card p { font-size: .82rem; margin: 0; color: var(--muted); }
+
+    /* ── Ad slot ── */
+    .ad-slot {
+      background: var(--border);
+      border-radius: var(--r);
+      height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-size: .8rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin: 2.5rem 0;
+    }
+
+    /* ── Affiliate Buttons ── */
+    .aff-section { margin: 2rem 0; }
+    .aff-section h3 { margin-bottom: .8rem; }
+    .aff-list { display: flex; flex-direction: column; gap: .6rem; }
+    .aff-btn {
+      display: flex;
+      align-items: center;
+      gap: .7rem;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+      padding: .75rem 1rem;
+      text-decoration: none;
+      color: var(--ink);
+      font-size: .9rem;
+      transition: border-color .2s, box-shadow .2s;
+    }
+    .aff-btn:hover {
+      border-color: var(--accent);
+      box-shadow: 0 2px 8px rgba(37,99,168,.12);
+    }
+    .aff-icon { font-size: 1.2rem; flex-shrink: 0; }
+    .aff-text strong { display: block; font-size: .9rem; }
+    .aff-text span { font-size: .78rem; color: var(--muted); }
+
+    /* ── Sidebar ── */
+    .sidebar-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+      padding: 1.2rem;
+      margin-bottom: 1.2rem;
+    }
+    .sidebar-card h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      margin-bottom: .8rem;
+      padding-bottom: .5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .sidebar-card ul { list-style: none; }
+    .sidebar-card ul li {
+      padding: .35rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: .88rem;
+    }
+    .sidebar-card ul li:last-child { border: none; }
+    .sidebar-card ul li a { color: var(--accent); text-decoration: none; }
+    .sidebar-card ul li a:hover { text-decoration: underline; }
+    .season-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: .35rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: .85rem;
+    }
+    .season-row:last-child { border: none; }
+    .season-tag {
+      font-size: .75rem;
+      padding: .15rem .5rem;
+      border-radius: 10px;
+    }
+    .tag-best { background: #d4edda; color: #155724; }
+    .tag-hot  { background: #fff3cd; color: #856404; }
+    .tag-off  { background: #f8d7da; color: #721c24; }
+
+    /* ── Related ── */
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1rem;
+      margin-top: 1.2rem;
+    }
+    .related-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+      overflow: hidden;
+      text-decoration: none;
+      color: var(--ink);
+      display: block;
+      transition: transform .2s;
+    }
+    .related-card:hover { transform: translateY(-3px); }
+    .related-card img { width: 100%; height: 130px; object-fit: cover; }
+    .related-card-body { padding: .8rem 1rem; }
+    .related-card h4 { font-family: 'Playfair Display', serif; font-size: 1rem; margin-bottom: .2rem; }
+    .related-card p { font-size: .82rem; color: var(--muted); margin: 0; }
+
+    /* ── Footer ── */
+    footer {
+      background: var(--ink);
+      color: #aaa;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: .85rem;
+    }
+    footer a { color: #ddd; text-decoration: none; }
+
+    /* ── TOC ── */
+    .toc { list-style: none; }
+    .toc li { padding: .3rem 0; border-bottom: 1px solid var(--border); font-size: .88rem; }
+    .toc li:last-child { border: none; }
+    .toc a { color: var(--accent); text-decoration: none; }
+    .toc a:hover { text-decoration: underline; }
+
+    @media (max-width: 768px) {
+      .container { grid-template-columns: 1fr; }
+      aside { position: static; }
+      .nav-links { display: none; }
+      .hero { height: 380px; }
+    }
+  </style>
 </head>
 <body>
 
-<nav class="site-nav">
-  <a href="index.html" class="nav-logo">La Dolce <span>Vita</span></a>
+<!-- NAV -->
+<nav>
+  <a class="nav-brand" href="index.html">La Dolce Vita</a>
   <ul class="nav-links">
-    <li><a href="destinations.html" class="active">Destinations</a></li>
+    <li><a href="destinations.html">Destinations</a></li>
     <li><a href="itineraries.html">Itineraries</a></li>
     <li><a href="blog.html">Travel Tips</a></li>
     <li><a href="about.html">About</a></li>
-    <li><a href="itineraries.html" class="nav-cta">Plan Your Trip</a></li>
   </ul>
 </nav>
-<div class="breadcrumb"><a href="index.html">Home</a><span>›</span><a href="destinations.html">Destinations</a><span>›</span>Florence</div>
 
-<div class="dest-hero">
-  <img src="https://images.unsplash.com/photo-1541370976299-4d24be63f3d6?w=1600&q=85" alt="Florence, Tuscany, Italy">
-  <div class="dest-hero-overlay">
-    <h1>Florence<br><em>Travel Guide</em></h1>
-    <div class="dest-hero-meta">
-      <span>📅 Best: April–June, Sept–Oct</span>
-      <span>⏱ Recommended: 3–4 days</span>
-      <span>🚆 1.5 hrs from Rome by high-speed train</span>
+<!-- HERO -->
+<div class="hero">
+  <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=1600&q=85"
+       onerror="this.src='https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?w=1600&q=85'"
+       alt="Amalfi Coast, Italy" />
+  <div class="hero-overlay">
+    <p class="hero-eyebrow">Italy · Campania</p>
+    <h1>Amalfi Coast <em>Travel Guide</em>
+      <br><span class="zh-inline" style="font-size:1.5rem">阿马尔菲海岸旅行指南</span>
+    </h1>
+    <p class="hero-sub">📅 <span class="en-inline">Best: May–June, Sept–Oct</span><span class="zh-inline">最佳时间：5–6月，9–10月</span> &nbsp;⏱ <span class="en-inline">Recommended: 3–5 days</span><span class="zh-inline">建议游玩：3–5天</span></p>
+    <div class="hero-badges">
+      <span class="badge">🌊 UNESCO Coastline / UNESCO海岸</span>
+      <span class="badge">🚢 Boat Trips / 游船</span>
+      <span class="badge">🥾 Hiking / 徒步</span>
+      <span class="badge">🍋 Limoncello</span>
     </div>
   </div>
 </div>
 
-<div class="quick-facts">
-  <div class="fact"><div class="fact-label">Region</div><div class="fact-value">Tuscany</div></div>
-  <div class="fact-divider"></div>
-  <div class="fact"><div class="fact-label">Airport</div><div class="fact-value">FLR / nearest PSA</div></div>
-  <div class="fact-divider"></div>
-  <div class="fact"><div class="fact-label">From Rome</div><div class="fact-value">1h 30m by train</div></div>
-  <div class="fact-divider"></div>
-  <div class="fact"><div class="fact-label">Budget / Day</div><div class="fact-value">€70–160</div></div>
-  <div class="fact-divider"></div>
-  <div class="fact"><div class="fact-label">UNESCO Site</div><div class="fact-value">Historic Centre</div></div>
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="index.html">Home</a> › <a href="destinations.html">Destinations</a> › Amalfi Coast
 </div>
 
-<div class="photo-strip">
-  <div class="photo-strip-item">
-    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=500&q=85" alt="Florentine food" style="object-position:center;">
-    <div class="photo-strip-label">Florentine Cuisine</div>
+<!-- MAIN CONTAINER -->
+<div class="container">
+<main>
+
+  <!-- LANG TOGGLE -->
+  <div class="lang-toggle">
+    <button class="lang-btn active" onclick="setLang('en')">English</button>
+    <button class="lang-btn" onclick="setLang('zh')">中文</button>
   </div>
-  <div class="photo-strip-item">
-    <img src="https://images.unsplash.com/photo-1568395556688-1de9a1a64a64?w=500&q=85" alt="Tuscany hills" style="object-position:center 30%;">
-    <div class="photo-strip-label">Tuscany Day Trips</div>
+
+  <!-- QUICK FACTS -->
+  <div class="quick-facts">
+    <div class="fact-card">
+      <div class="fact-label">Region / 地区</div>
+      <div class="fact-value">Campania</div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-label">From Naples / 那不勒斯出发</div>
+      <div class="fact-value">1h 30m by bus</div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-label">Budget/Day / 日均消费</div>
+      <div class="fact-value">€80–180</div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-label">UNESCO</div>
+      <div class="fact-value">Since 1997</div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-label">Best For / 适合</div>
+      <div class="fact-value">Scenery, Romance</div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-label">Book Ahead / 提前预订</div>
+      <div class="fact-value">Hotels, Boats</div>
+    </div>
   </div>
-  <div class="photo-strip-item">
-    <img src="https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?w=900&q=85" alt="Florence Duomo" style="object-position:center 40%;">
-    <div class="photo-strip-label">The Duomo</div>
+
+  <!-- INTRO -->
+  <div class="en">
+    <p>The Amalfi Coast is one of those places that genuinely earns its reputation. Cliffs plunge 400 metres into turquoise water. Pastel villages cling to the rock face. Lemon groves perfume every hillside road. It is not a place you pass through — it is a place you rearrange your schedule to linger in.</p>
+    <p>The key to doing it well is transport planning. The SS163 coastal road is spectacular and terrifying in equal measure. Knowing when to take the ferry, when to take the bus, and when to simply walk the clifftop paths separates a frustrating trip from an unforgettable one.</p>
   </div>
+  <div class="zh">
+    <p>阿马尔菲海岸是那种完全配得上它盛名的地方。悬崖从400米高处直插绿松石色的海面，粉彩色调的村庄紧贴岩壁而建，柠檬树林让每一条山路都充满香气。这里不是一个过路的地方，而是一个让你心甘情愿调整行程、多停留几天的地方。</p>
+    <p>玩好阿马尔菲的关键在于交通规划。沿海公路SS163既壮观又惊险。知道什么时候坐渡船、什么时候坐巴士、什么时候沿着悬崖步道步行，是好旅程与糟糕旅程的分水岭。</p>
+  </div>
+
+  <div class="ad-slot">Advertisement / 广告位</div>
+
+  <!-- TOP ATTRACTIONS -->
+  <h2 id="top-attractions">
+    <span class="en-inline">Top Attractions</span>
+    <span class="zh-inline">主要景点</span>
+  </h2>
+
+  <div class="attr-grid">
+    <div class="attr-card">
+      <img src="https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?w=600&q=85" alt="Positano" />
+      <div class="attr-body">
+        <div class="attr-num">01</div>
+        <h3>Positano</h3>
+        <p class="en">The postcard village. Stacked pink and white houses cascading to a pebble beach. Arrive before 9am or after 5pm to see it without the crowds. The beach (Spiaggia Grande) charges a sun-bed fee — walk left for the free section.</p>
+        <p class="zh">明信片上的村庄。粉白相间的房屋层层叠叠延伸至鹅卵石海滩。9点前或17点后到达，才能避开人潮。大海滩收取躺椅费，向左走可找到免费沙滩区域。</p>
+      </div>
+    </div>
+    <div class="attr-card">
+      <img src="https://images.unsplash.com/photo-1523531294919-4bcd7c65e216?w=600&q=85" alt="Ravello" />
+      <div class="attr-body">
+        <div class="attr-num">02</div>
+        <h3>Ravello</h3>
+        <p class="en">High above the coast (350m), Ravello is cooler, quieter, and more elegant. The Villa Cimbrone gardens offer the most famous view on the entire coast — the Terrace of Infinity. Wagner composed here. Book the gardens early.</p>
+        <p class="zh">位于海岸350米之上，拉韦洛更凉爽、更宁静、也更优雅。奇布罗内别墅花园拥有整条海岸最著名的景色——无限露台。瓦格纳曾在此创作。建议提前预订入园时间。</p>
+      </div>
+    </div>
+    <div class="attr-card">
+      <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=600&q=85" alt="Amalfi Town" />
+      <div class="attr-body">
+        <div class="attr-num">03</div>
+        <h3>
+          <span class="en-inline">Amalfi Town & Cathedral</span>
+          <span class="zh-inline">阿马尔菲镇与大教堂</span>
+        </h3>
+        <p class="en">The town that gave the coast its name. The Arab-Norman cathedral (€3) is genuinely stunning. The medieval paper museum (Museo della Carta) tells the story of how this small republic once traded paper with the Arab world. Allow half a day.</p>
+        <p class="zh">赋予海岸名字的城镇。阿拉伯-诺曼式大教堂（€3）令人叹为观止。中世纪造纸博物馆讲述了这个小共和国曾与阿拉伯世界进行纸张贸易的历史。留出半天时间慢慢游览。</p>
+      </div>
+    </div>
+    <div class="attr-card">
+      <img src="https://images.unsplash.com/photo-1534430480872-3498386e7856?w=600&q=85" alt="Path of the Gods hiking" />
+      <div class="attr-body">
+        <div class="attr-num">04</div>
+        <h3>
+          <span class="en-inline">Path of the Gods (Sentiero degli Dei)</span>
+          <span class="zh-inline">众神之路</span>
+        </h3>
+        <p class="en">Italy's most dramatic coastal hike. 7.8km from Agerola to Nocelle, mostly descending, with the Tyrrhenian Sea 400m below you the entire way. Take the early SITA bus to Agerola, walk to Nocelle, descend the 1,700 steps into Positano. Allow 4–5 hours.</p>
+        <p class="zh">意大利最壮观的海岸徒步路线。从阿杰罗拉到诺塞勒7.8公里，大部分为下坡，全程俯瞰400米之下的第勒尼安海。乘坐早班SITA巴士到阿杰罗拉，步行至诺塞勒后沿1700级台阶下降至波西塔诺。预计耗时4–5小时。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ad-slot">Advertisement / 广告位</div>
+
+  <!-- ITINERARY -->
+  <h2 id="itinerary">
+    <span class="en-inline">4-Day Amalfi Coast Itinerary</span>
+    <span class="zh-inline">阿马尔菲4日行程</span>
+  </h2>
+
+  <div class="day-block">
+    <div class="day-label">Day 1 · 第一天</div>
+    <h3>
+      <span class="en-inline">Arrive in Positano — Settle & Explore</span>
+      <span class="zh-inline">抵达波西塔诺，安顿与初探</span>
+    </h3>
+    <img src="https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?w=900&q=85" alt="Positano evening" />
+    <p class="en">Take the SITA bus from Naples or Salerno. Check in, then walk the village lanes in the late afternoon light. Dinner in the backstreets — avoid the waterfront restaurants (overpriced). Order fresh pasta with clams and a carafe of local white wine.</p>
+    <p class="zh">从那不勒斯或萨勒诺乘坐SITA巴士前往。办理入住后，在傍晚的余晖中漫步村中小巷。在小巷里用餐，避开海滨餐厅（价格虚高）。点一份新鲜蛤蜊意面和一壶当地白葡萄酒。</p>
+  </div>
+
+  <div class="day-block">
+    <div class="day-label">Day 2 · 第二天</div>
+    <h3>
+      <span class="en-inline">Path of the Gods Hike</span>
+      <span class="zh-inline">众神之路徒步</span>
+    </h3>
+    <img src="https://images.unsplash.com/photo-1534430480872-3498386e7856?w=900&q=85" alt="Path of the Gods" />
+    <p class="en">Early SITA bus to Agerola (buy the day pass). Hike Sentiero degli Dei to Nocelle. Descend the steps into Positano. Afternoon swim and gelato. This is the best day on the coast — do not skip it for a beach day.</p>
+    <p class="zh">早班SITA巴士前往阿杰罗拉（购买全日票）。徒步众神之路至诺塞勒，然后沿台阶下降至波西塔诺。下午游泳、吃冰淇淋。这是海岸最值得体验的一天，不要为了海滩日而跳过这段旅程。</p>
+  </div>
+
+  <div class="day-block">
+    <div class="day-label">Day 3 · 第三天</div>
+    <h3>
+      <span class="en-inline">Amalfi Town & Ravello</span>
+      <span class="zh-inline">阿马尔菲镇与拉韦洛</span>
+    </h3>
+    <img src="https://images.unsplash.com/photo-1523531294919-4bcd7c65e216?w=900&q=85" alt="Ravello Terrace of Infinity" />
+    <p class="en">Morning ferry to Amalfi. Visit the cathedral and the paper museum. After lunch, take the bus up to Ravello. Walk to Villa Cimbrone for the Terrace of Infinity. Stay for sunset — the light on the water is extraordinary from 350 metres up.</p>
+    <p class="zh">早晨乘渡轮前往阿马尔菲镇。参观大教堂和造纸博物馆。午餐后，乘巴士前往拉韦洛。步行至奇布罗内别墅观赏无限露台。留下来看日落——从350米高处俯瞰海面上的光线令人叹为观止。</p>
+  </div>
+
+  <div class="day-block">
+    <div class="day-label">Day 4 · 第四天</div>
+    <h3>
+      <span class="en-inline">Boat Trip & Emerald Grotto</span>
+      <span class="zh-inline">游船出行与翡翠洞</span>
+    </h3>
+    <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=900&q=85" alt="Amalfi Coast boat trip" />
+    <p class="en">Rent a small boat from Amalfi harbour or join a shared boat tour (book via GetYourGuide the night before). Visit the Emerald Grotto (Grotta dello Smeraldo), swim in the hidden coves accessible only by sea, and see the coast from the water — which is the only way to fully understand its scale.</p>
+    <p class="zh">从阿马尔菲港口租一艘小船或参加共享游船（前一晚通过GetYourGuide预订）。游览翡翠洞（Grotta dello Smeraldo），在只能从海上抵达的隐秘海湾游泳，从海上欣赏海岸——这是真正理解其壮观规模的唯一方式。</p>
+  </div>
+
+  <div class="tip-box">
+    <strong>🚌 Transport Reality Check / 交通实况</strong>
+    <span class="en">The coastal road gets gridlocked in July and August. A 10km journey can take 2 hours by bus. Use the ferry whenever possible between Positano, Amalfi, and Salerno — it's faster, cheaper, and far more pleasant. The SITA bus pass is €3.50 for a single journey or €12 for a day pass.</span>
+    <span class="zh">7、8月份沿海公路经常严重堵车，10公里的路程坐巴士可能需要2小时。尽量在波西塔诺、阿马尔菲和萨勒诺之间乘坐渡轮——更快、更便宜、也更舒适。SITA巴士单程票€3.50，全日票€12。</span>
+  </div>
+
+  <!-- FOOD -->
+  <h2 id="food">
+    <span class="en-inline">Food & Drink</span>
+    <span class="zh-inline">美食与饮品</span>
+  </h2>
+
+  <p class="en">The Amalfi Coast kitchen is built on three things: lemons, seafood, and buffalo mozzarella from the nearby Paestum plains. The lemon here (Sfusato Amalfitano) is larger, sweeter, and more fragrant than any other in Italy — and it goes into everything.</p>
+  <p class="zh">阿马尔菲海岸的饮食文化建立在三样东西上：柠檬、海鲜，以及来自附近帕埃斯图姆平原的水牛马苏里拉奶酪。当地柠檬（Sfusato Amalfitano）比意大利其他任何地方的柠檬都更大、更甜、香气更浓——几乎融入每一道菜。</p>
+
+  <div class="food-grid">
+    <div class="food-card">
+      <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&q=85" alt="Scialatielli ai frutti di mare" />
+      <div class="food-card-body">
+        <h4>Scialatielli ai Frutti di Mare</h4>
+        <p class="en">Local thick pasta with mixed seafood. The definitive dish.</p>
+        <p class="zh">当地宽面配什锦海鲜，是这里最具代表性的一道菜。</p>
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="https://images.unsplash.com/photo-1563227812-0ea4c22e6cc8?w=400&q=85" alt="Limoncello" />
+      <div class="food-card-body">
+        <h4>Limoncello</h4>
+        <p class="en">Made with Sfusato Amalfitano lemons. Drink it ice-cold after dinner.</p>
+        <p class="zh">用当地柠檬制成，饭后冰镇享用风味最佳。</p>
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=400&q=85" alt="Buffalo Mozzarella" />
+      <div class="food-card-body">
+        <h4>Mozzarella di Bufala</h4>
+        <p class="en">From Paestum, 40 minutes south. Eat it alone with good olive oil and salt.</p>
+        <p class="zh">来自南部40分钟车程的帕埃斯图姆，直接搭配好橄榄油和盐食用即可。</p>
+      </div>
+    </div>
+    <div class="food-card">
+      <img src="https://images.unsplash.com/photo-1548365328-8c6db3220e4c?w=400&q=85" alt="Delizia al Limone" />
+      <div class="food-card-body">
+        <h4>Delizia al Limone</h4>
+        <p class="en">The coast's signature dessert — a dome of sponge filled with lemon cream.</p>
+        <p class="zh">海岸的招牌甜点——海绵蛋糕包裹柠檬奶油馅，外形如圆顶。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- AFFILIATE LINKS -->
+  <h2 id="book">
+    <span class="en-inline">Book Your Amalfi Coast Trip</span>
+    <span class="zh-inline">预订你的阿马尔菲之旅</span>
+  </h2>
+
+  <p class="en" style="font-size:.9rem;color:var(--muted)">The links below are affiliate links — if you book through them, we earn a small commission at no extra cost to you. It helps keep this guide free.</p>
+  <p class="zh" style="font-size:.9rem;color:var(--muted)">以下为联盟链接，通过这些链接预订不会增加你的费用，但我们会获得一小笔佣金，帮助维持这份免费指南的运营。</p>
+
+  <div class="aff-list" style="margin-top:1rem;">
+    <!-- ⚠️ 将以下 href="#" 替换为你的 GetYourGuide 联盟链接 -->
+    <a class="aff-btn" href="#" target="_blank" rel="noopener">
+      <span class="aff-icon">🚢</span>
+      <div class="aff-text">
+        <strong><span class="en-inline">Amalfi Coast Boat Tour</span><span class="zh-inline">阿马尔菲游船体验</span></strong>
+        <span><span class="en-inline">Full-day private/shared boat trips — GetYourGuide</span><span class="zh-inline">全天私人或拼船游览 — GetYourGuide</span></span>
+      </div>
+    </a>
+    <a class="aff-btn" href="#" target="_blank" rel="noopener">
+      <span class="aff-icon">🥾</span>
+      <div class="aff-text">
+        <strong><span class="en-inline">Path of the Gods Guided Hike</span><span class="zh-inline">众神之路向导徒步</span></strong>
+        <span><span class="en-inline">Includes transport, guide & swim stop — Viator</span><span class="zh-inline">含交通、导游及游泳休息 — Viator</span></span>
+      </div>
+    </a>
+    <a class="aff-btn" href="#" target="_blank" rel="noopener">
+      <span class="aff-icon">🏨</span>
+      <div class="aff-text">
+        <strong><span class="en-inline">Hotels on the Amalfi Coast</span><span class="zh-inline">阿马尔菲海岸酒店</span></strong>
+        <span><span class="en-inline">Compare & book — Booking.com</span><span class="zh-inline">比较并预订 — Booking.com</span></span>
+      </div>
+    </a>
+    <a class="aff-btn" href="#" target="_blank" rel="noopener">
+      <span class="aff-icon">🚆</span>
+      <div class="aff-text">
+        <strong><span class="en-inline">Naples → Amalfi Train + Bus</span><span class="zh-inline">那不勒斯→阿马尔菲 火车+巴士</span></strong>
+        <span><span class="en-inline">Book trains from Rome/Naples — Omio</span><span class="zh-inline">从罗马/那不勒斯出发购票 — Omio</span></span>
+      </div>
+    </a>
+    <a class="aff-btn" href="#" target="_blank" rel="noopener">
+      <span class="aff-icon">🍋</span>
+      <div class="aff-text">
+        <strong><span class="en-inline">Limoncello & Food Tasting Tour</span><span class="zh-inline">柠檬酒与美食品鉴之旅</span></strong>
+        <span><span class="en-inline">Local food experience — GetYourGuide</span><span class="zh-inline">本地美食体验 — GetYourGuide</span></span>
+      </div>
+    </a>
+  </div>
+
+  <div class="ad-slot">Advertisement / 广告位</div>
+
+  <!-- PRACTICAL TIPS -->
+  <h2 id="tips">
+    <span class="en-inline">Practical Tips</span>
+    <span class="zh-inline">实用小贴士</span>
+  </h2>
+  <ul style="padding-left:1.2rem; margin-bottom:1.5rem;">
+    <li class="en" style="margin-bottom:.6rem">Book hotels <strong>3–6 months ahead</strong> for July and August. The coast has limited accommodation and prices triple in peak season.</li>
+    <li class="zh" style="margin-bottom:.6rem; display:none">7月和8月的酒店需<strong>提前3–6个月</strong>预订。海岸住宿有限，旺季价格可涨至3倍。</li>
+
+    <li class="en" style="margin-bottom:.6rem">Wear proper <strong>walking shoes</strong>, not flip-flops. The path of the gods and most village steps require grip.</li>
+    <li class="zh" style="margin-bottom:.6rem; display:none">穿好<strong>徒步鞋</strong>，不要穿人字拖。众神之路及大多数村庄台阶需要防滑鞋底。</li>
+
+    <li class="en" style="margin-bottom:.6rem">The <strong>ferry timetable</strong> changes seasonally. Always check <strong>travelmar.it</strong> for current schedules before you plan your day.</li>
+    <li class="zh" style="margin-bottom:.6rem; display:none"><strong>渡轮时刻表</strong>按季节调整。每天出行前务必在 <strong>travelmar.it</strong> 查询最新班次。</li>
+
+    <li class="en" style="margin-bottom:.6rem">Avoid driving if you can. The SS163 is one-lane in many sections and parking is nearly impossible in Positano.</li>
+    <li class="zh" style="margin-bottom:.6rem; display:none">尽量避免自驾。SS163公路许多路段仅单车道，波西塔诺几乎找不到停车位。</li>
+  </ul>
+
+  <!-- RELATED -->
+  <h2>
+    <span class="en-inline">More Italy Guides</span>
+    <span class="zh-inline">更多意大利指南</span>
+  </h2>
+  <div class="related-grid">
+    <a class="related-card" href="naples.html">
+      <img src="https://images.unsplash.com/photo-1529260830199-42c24126f198?w=500&q=85" alt="Naples" />
+      <div class="related-card-body">
+        <h4>Naples</h4>
+        <p><span class="en-inline">Pizza, Pompeii & raw energy</span><span class="zh-inline">披萨、庞贝与原始活力</span></p>
+      </div>
+    </a>
+    <a class="related-card" href="rome.html">
+      <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=500&q=85" alt="Rome" />
+      <div class="related-card-body">
+        <h4>Rome</h4>
+        <p><span class="en-inline">The Colosseum, Vatican & beyond</span><span class="zh-inline">斗兽场、梵蒂冈及更多</span></p>
+      </div>
+    </a>
+    <a class="related-card" href="florence.html">
+      <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=500&q=85" alt="Florence" />
+      <div class="related-card-body">
+        <h4>Florence</h4>
+        <p><span class="en-inline">Art, Uffizi & Tuscany</span><span class="zh-inline">艺术、乌菲齐与托斯卡纳</span></p>
+      </div>
+    </a>
+  </div>
+
+</main>
+
+<!-- SIDEBAR -->
+<aside>
+
+  <div class="sidebar-card">
+    <h4>📋 <span class="en-inline">In This Guide</span><span class="zh-inline">本文目录</span></h4>
+    <ul class="toc">
+      <li><a href="#top-attractions">🏛 <span class="en-inline">Top Attractions</span><span class="zh-inline">主要景点</span></a></li>
+      <li><a href="#itinerary">🗓 <span class="en-inline">4-Day Itinerary</span><span class="zh-inline">4日行程</span></a></li>
+      <li><a href="#food">🍝 <span class="en-inline">Food & Drink</span><span class="zh-inline">美食饮品</span></a></li>
+      <li><a href="#book">🎫 <span class="en-inline">Book Your Trip</span><span class="zh-inline">预订行程</span></a></li>
+      <li><a href="#tips">💡 <span class="en-inline">Practical Tips</span><span class="zh-inline">实用贴士</span></a></li>
+    </ul>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>🌤 <span class="en-inline">Best Time to Visit</span><span class="zh-inline">最佳游览时间</span></h4>
+    <div class="season-row">
+      <span>April–June</span>
+      <span class="season-tag tag-best">⭐ Best</span>
+    </div>
+    <div class="season-row">
+      <span>July–August</span>
+      <span class="season-tag tag-hot">🌡 Very Hot</span>
+    </div>
+    <div class="season-row">
+      <span>September–Oct</span>
+      <span class="season-tag tag-best">⭐ Best</span>
+    </div>
+    <div class="season-row">
+      <span>Nov–March</span>
+      <span class="season-tag tag-off">🌧 Many closed</span>
+    </div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>🗺 <span class="en-inline">Nearby Destinations</span><span class="zh-inline">周边目的地</span></h4>
+    <ul>
+      <li><a href="naples.html">Naples (1h 30m) →</a></li>
+      <li><a href="#">Pompeii (1h bus) →</a></li>
+      <li><a href="#">Capri (ferry) →</a></li>
+      <li><a href="#">Paestum (1h) →</a></li>
+    </ul>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>⚡ <span class="en-inline">Quick Book</span><span class="zh-inline">快速预订</span></h4>
+    <div class="aff-list" style="gap:.45rem;">
+      <a class="aff-btn" href="#" target="_blank" rel="noopener" style="padding:.55rem .8rem;">
+        <span class="aff-icon">🚢</span>
+        <div class="aff-text">
+          <strong style="font-size:.82rem;"><span class="en-inline">Boat Tours</span><span class="zh-inline">游船</span></strong>
+          <span style="font-size:.72rem;">GetYourGuide</span>
+        </div>
+      </a>
+      <a class="aff-btn" href="#" target="_blank" rel="noopener" style="padding:.55rem .8rem;">
+        <span class="aff-icon">🏨</span>
+        <div class="aff-text">
+          <strong style="font-size:.82rem;"><span class="en-inline">Hotels</span><span class="zh-inline">酒店</span></strong>
+          <span style="font-size:.72rem;">Booking.com</span>
+        </div>
+      </a>
+      <a class="aff-btn" href="#" target="_blank" rel="noopener" style="padding:.55rem .8rem;">
+        <span class="aff-icon">🚆</span>
+        <div class="aff-text">
+          <strong style="font-size:.82rem;"><span class="en-inline">Trains</span><span class="zh-inline">火车票</span></strong>
+          <span style="font-size:.72rem;">Omio</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+</aside>
 </div>
 
-<div class="content-layout">
-  <main>
-    <div class="ad-zone ad-banner">Advertisement</div>
-    <div class="toc">
-      <h3>In This Guide</h3>
-      <ol>
-        <li><a href="#top-attractions">Top Attractions</a></li>
-        <li><a href="#itinerary">3-Day Itinerary</a></li>
-        <li><a href="#day-trips">Tuscany Day Trips</a></li>
-        <li><a href="#food">Food &amp; Drink</a></li>
-        <li><a href="#where-to-stay">Where to Stay</a></li>
-        <li><a href="#tips">Practical Tips</a></li>
-      </ol>
-    </div>
-
-    <div class="article-body">
-      <p>Florence is the city that invented the Renaissance — and it still feels like it. Nowhere else in the world can you see Botticelli's Birth of Venus, Michelangelo's David, Brunelleschi's Dome, and the finest bistecca on earth all within 48 hours. The trick is knowing which museums to prioritise and which streets to escape into when the crowds overwhelm.</p>
-
-      <div class="info-box">
-        <h4>Florence at a Glance</h4>
-        <dl>
-          <dt>Best for</dt><dd>Art lovers, foodies, Tuscany day trips</dd>
-          <dt>Don't miss</dt><dd>Uffizi Gallery, Duomo dome climb, Oltrarno neighbourhood</dd>
-          <dt>Book ahead</dt><dd>Uffizi, Accademia (David), Duomo dome — all sell out</dd>
-          <dt>Best day trip</dt><dd>Siena, Cinque Terre, San Gimignano, Chianti</dd>
-        </dl>
-      </div>
-
-      <h2 id="top-attractions">Top Attractions in Florence</h2>
-
-      <div class="attraction-grid">
-        <div class="attraction-card">
-          <div class="attraction-card-img">
-            <img src="https://images.unsplash.com/photo-1554080353-a576cf803bda?w=600&q=85" alt="Uffizi Gallery Florence" style="object-position:center 35%;">
-            <div class="attraction-card-num">1</div>
-          </div>
-          <div class="attraction-card-body">
-            <h3 class="attraction-name">Uffizi Gallery</h3>
-            <p class="attraction-desc">Botticelli's Birth of Venus, da Vinci, Raphael, Caravaggio — all under one roof. Book at uffizi.it at least 2 weeks ahead. Allow 3–4 hours minimum and don't rush the Botticelli rooms.</p>
-          </div>
-        </div>
-        <div class="attraction-card">
-          <div class="attraction-card-img">
-            <img src="https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?w=600&q=85" alt="Duomo Florence dome" style="object-position:center 20%;">
-            <div class="attraction-card-num">2</div>
-          </div>
-          <div class="attraction-card-body">
-            <h3 class="attraction-name">The Duomo &amp; Dome Climb</h3>
-            <p class="attraction-desc">The cathedral is free. The dome climb (€30 combined pass, 463 steps) requires a timed booking at museumflorence.com. The panoramic view from the top is the finest in Florence — non-negotiable.</p>
-          </div>
-        </div>
-        <div class="attraction-card">
-          <div class="attraction-card-img">
-            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e8?w=600&q=85" alt="Michelangelo David Accademia" style="object-position:center 30%;">
-            <div class="attraction-card-num">3</div>
-          </div>
-          <div class="attraction-card-body">
-            <h3 class="attraction-name">Michelangelo's David</h3>
-            <p class="attraction-desc">Nothing prepares you for the scale. The David is not just large — it is enormous. Book at uffizi.it. Without a ticket, the queue can reach 2–3 hours. With one, you walk straight in.</p>
-          </div>
-        </div>
-        <div class="attraction-card">
-          <div class="attraction-card-img">
-            <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=85" alt="Oltrarno Boboli Gardens Florence" style="object-position:center 50%;">
-            <div class="attraction-card-num">4</div>
-          </div>
-          <div class="attraction-card-body">
-            <h3 class="attraction-name">Oltrarno &amp; Boboli Gardens</h3>
-            <p class="attraction-desc">Cross the Ponte Vecchio to the south bank. Florence's most liveable neighbourhood — artisan leather workshops, local wine bars, and the Boboli Gardens behind Pitti Palace (€10, refreshingly uncrowded).</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="photo-break">
-        <img src="https://images.unsplash.com/photo-1534260164206-3bfe7a2ede5e?w=1400&q=85" alt="Florence Ponte Vecchio and Arno river" style="object-position:center 55%;">
-        <div class="photo-break-caption">
-          <h3>The Arno &amp; Ponte Vecchio</h3>
-          <p>Florence's most iconic bridge has been lined with goldsmiths and jewellers since the 16th century. Cross it in the early morning — before 8am it's nearly empty, and the light on the water is extraordinary.</p>
-        </div>
-      </div>
-
-      <div class="ad-zone ad-rectangle">Advertisement</div>
-
-      <h2 id="itinerary">The Perfect 3-Day Florence Itinerary</h2>
-
-      <div class="day-block">
-        <div class="day-block-img">
-          <img src="https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?w=900&q=85" alt="Duomo Florence Day 1" style="object-position:center 30%;">
-        </div>
-        <div class="day-block-body">
-          <div class="day-label">Day 1</div>
-          <h3>The Duomo, Uffizi &amp; Ponte Vecchio</h3>
-          <p>Start at dawn at the Duomo square — the marble facade in morning light with no crowds is one of Florence's great experiences. Climb the dome with your pre-booked pass. After lunch, head to the Uffizi (timed entry, pre-booked). Allow at least 3 hours. Evening walk across Ponte Vecchio and into Oltrarno for dinner in the backstreets of Santo Spirito.</p>
-        </div>
-      </div>
-
-      <div class="day-block">
-        <div class="day-block-img">
-          <img src="https://images.unsplash.com/photo-1567592275673-44e3b8de0e47?w=900&q=85" alt="Florence panoramic view Day 2" style="object-position:center 25%;">
-        </div>
-        <div class="day-block-body">
-          <div class="day-label">Day 2</div>
-          <h3>The David, Piazzale Michelangelo &amp; San Miniato</h3>
-          <p>Morning at the Accademia — arrive at your booked slot. After, explore the San Lorenzo market and the Medici Chapels. Afternoon: walk up to Piazzale Michelangelo for Florence's classic panoramic view, then continue to San Miniato al Monte church (free, extraordinary Romanesque interior, and the best sunset in Florence).</p>
-        </div>
-      </div>
-
-      <div class="tip-box">
-        <strong>The Bardini Garden Secret</strong>
-        <p>The Bardini Garden (€10) is Florence's most underrated viewpoint — a terraced hillside garden with unobstructed views of the Duomo. Almost no one goes here. Visit at 4pm when the afternoon light hits the terrace and the city glows below.</p>
-      </div>
-
-      <div class="day-block">
-        <div class="day-block-img">
-          <img src="https://images.unsplash.com/photo-1526731597194-cd5d96df2bab?w=900&q=85" alt="Florence market and food Day 3" style="object-position:center center;">
-        </div>
-        <div class="day-block-body">
-          <div class="day-label">Day 3</div>
-          <h3>Sant'Ambrogio Market, Oltrarno &amp; The Negroni</h3>
-          <p>Morning at Sant'Ambrogio market — more authentic than San Lorenzo, frequented by actual Florentines. Browse the artisan leather workshops on Via de' Neri. Afternoon at the Boboli Gardens. Late afternoon aperitivo at a wine bar (enoteca) — and order a Negroni. It was invented in Florence in 1919 at Caffè Casoni. You're in the right city for it.</p>
-        </div>
-      </div>
-
-      <div class="ad-zone ad-rectangle">Advertisement</div>
-
-      <h2 id="day-trips">Tuscany Day Trips</h2>
-      <p>Florence is the ideal base for Tuscany. Every one of these is reachable in under 2 hours.</p>
-
-      <div class="day-trips-grid">
-        <a href="#" class="day-trip-card">
-          <div class="day-trip-img"><img src="https://images.unsplash.com/photo-1568395556688-1de9a1a64a64?w=500&q=85" alt="Siena Tuscany" style="object-position:center 40%;"></div>
-          <div class="day-trip-body"><h4>Siena</h4><p>Italy's finest medieval city. The Piazza del Campo and the striped Duomo are both extraordinary. 90 mins by bus.</p></div>
-        </a>
-        <a href="#" class="day-trip-card">
-          <div class="day-trip-img"><img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=500&q=85" alt="Cinque Terre" style="object-position:center 50%;"></div>
-          <div class="day-trip-body"><h4>Cinque Terre</h4><p>Five colourful coastal villages connected by hiking trails. 2.5 hrs by train to La Spezia, then local trains between villages.</p></div>
-        </a>
-        <a href="#" class="day-trip-card">
-          <div class="day-trip-img"><img src="https://images.unsplash.com/photo-1523540939399-141cbff6a8d7?w=500&q=85" alt="Chianti Tuscany" style="object-position:center 60%;"></div>
-          <div class="day-trip-body"><h4>Chianti Wine Country</h4><p>Rent a car and drive the Via Chiantigiana through vine-covered hills. Stop for tastings in Greve in Chianti.</p></div>
-        </a>
-      </div>
-
-      <h2 id="food">Food &amp; Drink in Florence</h2>
-      <p>Florentine cuisine is confident and unfussy. The Bistecca Fiorentina defines the city — a thick-cut T-bone from Chianina cattle, charcoal-grilled, served rare. Do not ask for it well done. You will be judged.</p>
-
-      <div class="food-photo-grid">
-        <div class="food-photo-card">
-          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=85" alt="Bistecca Fiorentina" style="object-position:center;">
-          <div class="food-photo-label"><h4>Bistecca Fiorentina</h4><p>T-bone, charcoal, olive oil. Florence's defining dish.</p></div>
-        </div>
-        <div class="food-photo-card">
-          <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=600&q=85" alt="Schiacciata Florence" style="object-position:center 60%;">
-          <div class="food-photo-label"><h4>Schiacciata</h4><p>The Florentine flatbread — olive oil, rosemary, sea salt.</p></div>
-        </div>
-        <div class="food-photo-card">
-          <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600&q=85" alt="Chianti wine Florence" style="object-position:center 50%;">
-          <div class="food-photo-label"><h4>Chianti Classico</h4><p>Order this, not just "Chianti". The Classico designation matters.</p></div>
-        </div>
-        <div class="food-photo-card">
-          <img src="https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?w=600&q=85" alt="Gelato Florence" style="object-position:center 20%;">
-          <div class="food-photo-label"><h4>Artisan Gelato</h4><p>Gelateria dei Neri — among the best in the city.</p></div>
-        </div>
-      </div>
-
-      <div class="inline-media">
-        <div class="inline-media-img">
-          <img src="https://images.unsplash.com/photo-1534260164206-3bfe7a2ede5e?w=700&q=85" alt="Oltrarno Florence neighbourhood" style="object-position:center 45%;">
-        </div>
-        <div class="inline-media-text">
-          <h3>Oltrarno — The Real Florence</h3>
-          <p>Cross the Ponte Vecchio and you enter a different Florence. Fewer tourist restaurants, more artisan workshops, better aperitivo bars. The neighbourhood of Santo Spirito in particular feels closer to the Renaissance city than anything on the north bank.</p>
-          <p>Walk Via Maggio for antique shops, Via dei Serragli for local bars, and Piazza di Santo Spirito at any hour for authentic neighbourhood life.</p>
-        </div>
-      </div>
-
-      <h2 id="where-to-stay">Where to Stay</h2>
-      <p><strong>Centro Storico</strong> — Walk to everything, premium price. <strong>Oltrarno</strong> — More atmospheric, better value, local character. <strong>Santa Croce</strong> — Well-connected, great restaurants, slightly less expensive than the historic centre. Avoid booking a hotel primarily by proximity to Santa Maria Novella station — the area is convenient but characterless.</p>
-
-      <h2 id="tips">Practical Tips</h2>
-      <ul>
-        <li>The <strong>Duomo Combined Pass</strong> (€30) covers the dome climb, Baptistery, Campanile, crypt and museum — book the dome slot when you buy it at museumflorence.com.</li>
-        <li>Many state museums offer <strong>free entry on the first Sunday of each month</strong>. Queues are long but worth it if you're flexible.</li>
-        <li>Florence gets oppressively hot in July and August. Start sightseeing before 9am and take a long lunch break in shade.</li>
-        <li>The Mercato Centrale (first floor) is excellent for a quick, high-quality, reasonably-priced lunch — not a tourist trap despite its fame.</li>
-      </ul>
-
-    </div>
-
-    <div style="margin-top:56px;padding-top:40px;border-top:1px solid var(--cream-dark);">
-      <p class="section-kicker">Continue Reading</p>
-      <h3 style="font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--forest);margin-bottom:24px;">More Italy Guides</h3>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
-        <a href="rome.html" style="display:flex;gap:14px;padding:16px;border:1px solid var(--cream-dark);border-radius:4px;text-decoration:none;color:inherit;">
-          <div style="width:80px;height:80px;border-radius:3px;overflow:hidden;flex-shrink:0;"><img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=200&q=80" style="width:100%;height:100%;object-fit:cover;object-position:center 40%;" alt="Rome"></div>
-          <div><p style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--forest);margin-bottom:5px;line-height:1.3;">Rome Travel Guide</p><p style="font-size:12px;color:var(--text-light);">The Colosseum, Vatican &amp; beyond</p></div>
-        </a>
-        <a href="venice.html" style="display:flex;gap:14px;padding:16px;border:1px solid var(--cream-dark);border-radius:4px;text-decoration:none;color:inherit;">
-          <div style="width:80px;height:80px;border-radius:3px;overflow:hidden;flex-shrink:0;"><img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=200&q=80" style="width:100%;height:100%;object-fit:cover;" alt="Venice"></div>
-          <div><p style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--forest);margin-bottom:5px;line-height:1.3;">Venice Travel Guide</p><p style="font-size:12px;color:var(--text-light);">Canals, islands &amp; la Serenissima</p></div>
-        </a>
-      </div>
-    </div>
-  </main>
-
-  <aside class="sidebar">
-    <div class="ad-zone ad-sidebar">Advertisement</div>
-    <div class="sidebar-widget">
-      <h3>Florence Quick Links</h3>
-      <ul>
-        <li><a href="#">🎫 Book Uffizi Gallery</a></li>
-        <li><a href="#">🎫 Book Michelangelo's David</a></li>
-        <li><a href="#">🎫 Book Duomo Dome Climb</a></li>
-        <li><a href="#">🚆 Florence → Venice Train</a></li>
-        <li><a href="#">🚆 Rome → Florence Train</a></li>
-      </ul>
-    </div>
-    <div class="sidebar-widget">
-      <h3>Best Time to Visit</h3>
-      <div style="display:flex;flex-direction:column;gap:8px;">
-        <div style="display:flex;justify-content:space-between;font-size:13px;"><span>April – June</span><span style="color:var(--terracotta);font-weight:600;">⭐ Best</span></div>
-        <div style="display:flex;justify-content:space-between;font-size:13px;"><span>July – August</span><span style="color:var(--sand);">🌡 Very hot</span></div>
-        <div style="display:flex;justify-content:space-between;font-size:13px;"><span>September – Oct</span><span style="color:var(--terracotta);font-weight:600;">⭐ Best</span></div>
-        <div style="display:flex;justify-content:space-between;font-size:13px;"><span>November – March</span><span style="color:var(--sand);">🌧 Quieter</span></div>
-      </div>
-    </div>
-    <div class="sidebar-widget">
-      <h3>Nearby Destinations</h3>
-      <ul>
-        <li><a href="rome.html">Rome (1h 30m) →</a></li>
-        <li><a href="venice.html">Venice (2h) →</a></li>
-        <li><a href="destinations.html">Milan (1h 45m) →</a></li>
-        <li><a href="destinations.html">Siena (90m bus) →</a></li>
-      </ul>
-    </div>
-    <div class="ad-zone" style="height:250px;border-radius:4px;font-size:12px;">Advertisement</div>
-  </aside>
-</div>
-
-<footer class="site-footer">
-  <div class="footer-grid">
-    <div><div class="footer-brand">La Dolce <span>Vita</span></div><p class="footer-tagline">Italy's most comprehensive travel guide.</p></div>
-    <div class="footer-col"><h4>Destinations</h4><ul><li><a href="rome.html">Rome</a></li><li><a href="florence.html">Florence</a></li><li><a href="venice.html">Venice</a></li></ul></div>
-    <div class="footer-col"><h4>Plan</h4><ul><li><a href="blog.html">All Guides</a></li><li><a href="itineraries.html">Itineraries</a></li></ul></div>
-    <div class="footer-col"><h4>About</h4><ul><li><a href="about.html">About Us</a></li></ul></div>
-  </div>
-  <div class="footer-bottom"><p>© 2026 La Dolce Vita Italy Travel Guide. All rights reserved.</p><p>Made with ❤️ for Italy lovers everywhere</p></div>
+<!-- FOOTER -->
+<footer>
+  <p style="font-family:'Playfair Display',serif; font-size:1.1rem; color:#eee; margin-bottom:.5rem;">La Dolce Vita</p>
+  <p>Italy's most comprehensive travel guide · 意大利最全面的旅行指南</p>
+  <p style="margin-top:.8rem;">
+    <a href="rome.html">Rome</a> · <a href="florence.html">Florence</a> · <a href="#">Venice</a> · <a href="#">Amalfi</a>
+  </p>
+  <p style="margin-top:1rem;">© 2026 La Dolce Vita Italy Travel Guide. All rights reserved.</p>
 </footer>
+
+<script>
+  function setLang(lang) {
+    const btns = document.querySelectorAll('.lang-btn');
+    btns.forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.lang-btn')[lang === 'en' ? 0 : 1].classList.add('active');
+
+    if (lang === 'zh') {
+      document.body.classList.add('zh-mode');
+      // show zh list items
+      document.querySelectorAll('li.zh').forEach(el => el.style.display = 'list-item');
+      document.querySelectorAll('li.en').forEach(el => el.style.display = 'none');
+    } else {
+      document.body.classList.remove('zh-mode');
+      document.querySelectorAll('li.en').forEach(el => el.style.display = 'list-item');
+      document.querySelectorAll('li.zh').forEach(el => el.style.display = 'none');
+    }
+  }
+</script>
+
 </body>
 </html>
