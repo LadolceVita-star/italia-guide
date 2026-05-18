@@ -221,14 +221,14 @@
     .dest-grid {
       display: grid;
       grid-template-columns: 2fr 1fr 1fr;
-      grid-template-rows: 340px 240px;
+      grid-template-rows: 280px 220px 220px;
       gap: 8px;
     }
     .dest-card {
       position: relative; overflow: hidden;
       cursor: pointer; text-decoration: none; color: inherit;
     }
-    .dest-card:first-child { grid-row: span 2; }
+    .dest-big { grid-row: span 2; }
     .dest-card img {
       width: 100%; height: 100%; object-fit: cover;
       filter: brightness(.75) saturate(1.1);
@@ -248,14 +248,14 @@
     .dest-card h3 {
       font-family: 'Cormorant Garamond', serif;
       font-size: 1.7rem; font-weight: 300; color: var(--white);
-      margin-bottom: .2rem; line-height: 1.1;
+      margin-bottom: .2rem; line-height: 1.2;
     }
-    .dest-card:first-child h3 { font-size: 2.8rem; }
+    .dest-big h3 { font-size: 2.6rem; }
     .dest-card p {
       font-size: .78rem; color: rgba(255,255,255,.6);
       font-weight: 300; line-height: 1.5;
     }
-    .dest-card:first-child p { font-size: .85rem; max-width: 300px; }
+    .dest-big p { font-size: .85rem; max-width: 300px; }
     .dest-arrow {
       position: absolute; top: 1rem; right: 1rem;
       width: 32px; height: 32px; border-radius: 50%;
@@ -554,12 +554,13 @@
     </a>
   </div>
 
+  <!-- Row 1: Florence (big) + Rome + Venice -->
   <div class="dest-grid">
-    <a href="italia-guide/florence.html" class="dest-card">
+    <a href="italia-guide/florence.html" class="dest-card dest-big">
       <img src="https://images.unsplash.com/photo-1541370976299-4d24be63f3d6?w=900&q=85" alt="Florence" />
       <div class="dest-card-overlay">
         <div class="dest-tag">Tuscany · <span class="en-inline">3–4 days</span><span class="zh-inline">3–4天</span></div>
-        <h3>Florence</h3>
+        <h3>Florence<br><small style="font-family:'Outfit',sans-serif;font-size:.85rem;font-weight:300;opacity:.7">佛罗伦萨</small></h3>
         <p class="en">The Uffizi, Michelangelo's David, the Duomo — and the finest bistecca on earth.</p>
         <p class="zh">乌菲齐美术馆、大卫像、圣母百花大教堂——以及世界上最美味的牛排。</p>
       </div>
@@ -569,9 +570,9 @@
       <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=600&q=85" alt="Rome" style="object-position:center 40%;" />
       <div class="dest-card-overlay">
         <div class="dest-tag">Lazio · <span class="en-inline">4–5 days</span><span class="zh-inline">4–5天</span></div>
-        <h3>Rome</h3>
-        <p class="en">The Colosseum, Vatican & beyond.</p>
-        <p class="zh">斗兽场、梵蒂冈及更多。</p>
+        <h3>Rome <small style="font-family:'Outfit',sans-serif;font-size:.75rem;font-weight:300;opacity:.7">罗马</small></h3>
+        <p class="en">The Colosseum, Vatican & la dolce vita.</p>
+        <p class="zh">斗兽场、梵蒂冈与甜蜜生活。</p>
       </div>
       <div class="dest-arrow">→</div>
     </a>
@@ -579,29 +580,73 @@
       <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=600&q=85" alt="Venice" />
       <div class="dest-card-overlay">
         <div class="dest-tag">Veneto · <span class="en-inline">2–3 days</span><span class="zh-inline">2–3天</span></div>
-        <h3>Venice</h3>
+        <h3>Venice <small style="font-family:'Outfit',sans-serif;font-size:.75rem;font-weight:300;opacity:.7">威尼斯</small></h3>
         <p class="en">Canals, islands & la Serenissima.</p>
         <p class="zh">运河、岛屿与最宁静的水城。</p>
       </div>
       <div class="dest-arrow">→</div>
     </a>
+
+    <!-- Row 2: Amalfi + Milan + Naples -->
     <a href="italia-guide/italia-guide/amalfi.html" class="dest-card">
       <img src="https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?w=600&q=85" alt="Amalfi Coast" />
       <div class="dest-card-overlay">
         <div class="dest-tag">Campania · <span class="en-inline">3–5 days</span><span class="zh-inline">3–5天</span></div>
-        <h3>Amalfi</h3>
-        <p class="en">Cliffs, Positano & the Path of the Gods.</p>
-        <p class="zh">悬崖、波西塔诺与众神之路。</p>
+        <h3>Amalfi <small style="font-family:'Outfit',sans-serif;font-size:.75rem;font-weight:300;opacity:.7">阿马尔菲</small></h3>
+        <p class="en">Positano, cliffs & the Path of the Gods.</p>
+        <p class="zh">波西塔诺、悬崖与众神之路。</p>
+      </div>
+      <div class="dest-arrow">→</div>
+    </a>
+    <a href="italia-guide/milan.html" class="dest-card">
+      <img src="https://images.unsplash.com/photo-1520175480921-4edfa2983e0f?w=600&q=85" alt="Milan" />
+      <div class="dest-card-overlay">
+        <div class="dest-tag">Lombardy · <span class="en-inline">2–3 days</span><span class="zh-inline">2–3天</span></div>
+        <h3>Milan <small style="font-family:'Outfit',sans-serif;font-size:.75rem;font-weight:300;opacity:.7">米兰</small></h3>
+        <p class="en">Fashion, The Last Supper & aperitivo culture.</p>
+        <p class="zh">时尚之都、最后的晚餐与餐前酒文化。</p>
       </div>
       <div class="dest-arrow">→</div>
     </a>
     <a href="destinations.html" class="dest-card">
+      <img src="https://images.unsplash.com/photo-1529260830199-42c24126f198?w=600&q=85" alt="Naples" />
+      <div class="dest-card-overlay">
+        <div class="dest-tag">Campania · <span class="en-inline">2–3 days</span><span class="zh-inline">2–3天</span></div>
+        <h3>Naples <small style="font-family:'Outfit',sans-serif;font-size:.75rem;font-weight:300;opacity:.7">那不勒斯</small></h3>
+        <p class="en">The world's best pizza, Pompeii & raw energy.</p>
+        <p class="zh">世界最好的披萨、庞贝与原始活力。</p>
+      </div>
+      <div class="dest-arrow">→</div>
+    </a>
+
+    <!-- Row 3: Sicily + Sardinia + Cinque Terre -->
+    <a href="italia-guide/sicily.html" class="dest-card">
       <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=600&q=85" alt="Sicily" />
       <div class="dest-card-overlay">
         <div class="dest-tag">Sicily · <span class="en-inline">5–7 days</span><span class="zh-inline">5–7天</span></div>
-        <h3>Sicily</h3>
-        <p class="en">Ancient temples, volcanic peaks & arancini.</p>
-        <p class="zh">古代神庙、火山山峰与炸饭团。</p>
+        <h3>Sicily <small style="font-family:'Outfit',sans-serif;font-size:.75rem;font-weight:300;opacity:.7">西西里</small></h3>
+        <p class="en">Ancient temples, Mt Etna & arancini.</p>
+        <p class="zh">古代神庙、埃特纳火山与炸饭团。</p>
+      </div>
+      <div class="dest-arrow">→</div>
+    </a>
+    <a href="italia-guide/sardinia.html" class="dest-card">
+      <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=600&q=85" alt="Sardinia" />
+      <div class="dest-card-overlay">
+        <div class="dest-tag">Sardinia · <span class="en-inline">5–7 days</span><span class="zh-inline">5–7天</span></div>
+        <h3>Sardinia <small style="font-family:'Outfit',sans-serif;font-size:.75rem;font-weight:300;opacity:.7">撒丁岛</small></h3>
+        <p class="en">White beaches & turquoise sea.</p>
+        <p class="zh">白色沙滩与绿松石色大海。</p>
+      </div>
+      <div class="dest-arrow">→</div>
+    </a>
+    <a href="destinations.html" class="dest-card">
+      <img src="https://images.unsplash.com/photo-1534067783941-51c9c23ecefd?w=600&q=85" alt="Cinque Terre" />
+      <div class="dest-card-overlay">
+        <div class="dest-tag">Liguria · <span class="en-inline">2–3 days</span><span class="zh-inline">2–3天</span></div>
+        <h3>Cinque Terre <small style="font-family:'Outfit',sans-serif;font-size:.75rem;font-weight:300;opacity:.7">五渔村</small></h3>
+        <p class="en">Five colourful villages on the Ligurian coast.</p>
+        <p class="zh">利古里亚海岸上五个彩色渔村。</p>
       </div>
       <div class="dest-arrow">→</div>
     </a>
