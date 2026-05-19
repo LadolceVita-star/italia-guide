@@ -1,305 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Milan Travel Guide 2026 — Fashion, Art & Food | La Dolce Vita</title>
-<meta name="description" content="The complete Milan travel guide for 2026. The Duomo, da Vinci's Last Supper, fashion districts, aperitivo culture, and the best food in Italy's most cosmopolitan city.">
-<meta name="keywords" content="Milan travel guide, things to do Milan, Milan Duomo, Last Supper Milan, Milan fashion, Milan food guide, aperitivo Milan">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Milan Travel Guide 2026 — Duomo, Last Supper & Fashion | La Dolce Vita</title>
+<meta name="description" content="The complete Milan travel guide 2026. Duomo, The Last Supper, fashion districts, Lake Como day trip and best food. 米兰2026旅行指南。"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 <style>
-  .dest-hero{position:relative;height:560px;overflow:hidden}.dest-hero img{width:100%;height:100%;object-fit:cover;object-position:center 40%;filter:brightness(.58) saturate(1.1)}.dest-hero-overlay{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:64px 80px;background:linear-gradient(to top,rgba(20,35,20,.9) 0%,transparent 55%)}.dest-hero h1{font-family:'Cormorant Garamond',serif;font-size:80px;font-weight:300;color:var(--white);line-height:1;margin-bottom:14px}.dest-hero h1 em{font-style:italic;color:var(--terracotta-light)}.dest-hero-meta{display:flex;gap:28px}.dest-hero-meta span{font-size:13px;color:rgba(255,255,255,.7)}
-  .quick-facts{background:var(--forest);padding:26px 80px;display:flex;gap:0;align-items:center;overflow-x:auto}.fact{display:flex;flex-direction:column;gap:3px;padding:0 36px 0 0}.fact-label{font-size:10px;font-weight:600;letter-spacing:.12em;color:rgba(255,255,255,.38);text-transform:uppercase}.fact-value{font-size:14px;font-weight:500;color:var(--white)}.fact-divider{width:1px;height:36px;background:rgba(255,255,255,.1);margin-right:36px;flex-shrink:0}
-  .photo-strip{display:grid;grid-template-columns:2fr 1fr 1fr;gap:4px;height:280px}.photo-strip-item{overflow:hidden;position:relative}.photo-strip-item img{width:100%;height:100%;object-fit:cover;transition:transform .6s;filter:brightness(.85) saturate(1.1)}.photo-strip-item:hover img{transform:scale(1.05)}.photo-strip-label{position:absolute;bottom:10px;left:12px;background:rgba(20,35,20,.82);backdrop-filter:blur(4px);padding:4px 10px;border-radius:2px;font-size:10px;font-weight:600;letter-spacing:.08em;color:rgba(255,255,255,.9);text-transform:uppercase}
-  .attraction-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin:28px 0}.attraction-card{border-radius:4px;overflow:hidden;border:1px solid var(--cream-dark);background:var(--white);transition:transform .3s,box-shadow .3s}.attraction-card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(42,36,32,.1)}.attraction-card-img{height:180px;overflow:hidden;position:relative}.attraction-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s;filter:brightness(.88) saturate(1.1)}.attraction-card:hover .attraction-card-img img{transform:scale(1.06)}.attraction-card-num{position:absolute;top:12px;left:12px;background:var(--terracotta);color:var(--white);font-family:'Cormorant Garamond',serif;font-size:22px;width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center}.attraction-card-body{padding:18px 20px}.attraction-name{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--forest);margin-bottom:7px}.attraction-desc{font-size:13px;font-weight:300;line-height:1.65;color:var(--text-muted)}
-  .photo-break{position:relative;height:420px;overflow:hidden;margin:48px 0}.photo-break img{width:100%;height:100%;object-fit:cover;filter:brightness(.58) saturate(1.15)}.photo-break-caption{position:absolute;bottom:0;left:0;right:0;padding:28px 36px;background:linear-gradient(to top,rgba(20,35,20,.9),transparent)}.photo-break-caption h3{font-family:'Cormorant Garamond',serif;font-size:34px;color:var(--white);font-weight:300;margin-bottom:8px}.photo-break-caption p{font-size:13px;color:rgba(255,255,255,.65);font-weight:300;max-width:540px}
-  .inline-media{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center;margin:36px 0}.inline-media.reverse{direction:rtl}.inline-media.reverse>*{direction:ltr}.inline-media-img{border-radius:4px;overflow:hidden;height:280px}.inline-media-img img{width:100%;height:100%;object-fit:cover;filter:brightness(.88) saturate(1.1)}.inline-media-text h3{font-family:'Cormorant Garamond',serif;font-size:26px;color:var(--forest);margin-bottom:12px}.inline-media-text p{font-size:14px;font-weight:300;line-height:1.85;color:var(--charcoal);margin-bottom:12px}
-  .day-block{border:1px solid var(--cream-dark);border-radius:4px;overflow:hidden;margin:18px 0;background:var(--white)}.day-block-img{height:200px;overflow:hidden}.day-block-img img{width:100%;height:100%;object-fit:cover;filter:brightness(.8) saturate(1.1);transition:transform .5s}.day-block:hover .day-block-img img{transform:scale(1.04)}.day-block-body{padding:22px 24px}.day-label{font-size:11px;font-weight:700;letter-spacing:.15em;color:var(--terracotta);text-transform:uppercase;margin-bottom:5px}.day-block h3{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--forest);margin-bottom:10px}.day-block p{font-size:14px;font-weight:300;line-height:1.8;color:var(--charcoal);margin:0}
-  .neighbourhood-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:24px 0}.neighbourhood-card{border-radius:4px;overflow:hidden;border:1px solid var(--cream-dark);background:var(--white);transition:transform .3s,box-shadow .3s}.neighbourhood-card:hover{transform:translateY(-4px);box-shadow:0 14px 36px rgba(42,36,32,.1)}.neighbourhood-img{height:160px;overflow:hidden}.neighbourhood-img img{width:100%;height:100%;object-fit:cover;filter:brightness(.85) saturate(1.1);transition:transform .4s}.neighbourhood-card:hover .neighbourhood-img img{transform:scale(1.05)}.neighbourhood-body{padding:14px 16px}.neighbourhood-body h4{font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--forest);margin-bottom:5px}.neighbourhood-body p{font-size:12px;font-weight:300;color:var(--text-muted);line-height:1.6;margin:0}
-  .tip-box{background:var(--terracotta-pale);border-left:3px solid var(--terracotta);border-radius:0 4px 4px 0;padding:18px 24px;margin:28px 0}.tip-box strong{display:block;font-size:11px;font-weight:700;letter-spacing:.12em;color:var(--terracotta);text-transform:uppercase;margin-bottom:8px}.tip-box p{font-size:14px;color:var(--charcoal);margin:0;line-height:1.7}
-  .info-box{background:var(--cream);border:1px solid var(--cream-dark);border-radius:4px;padding:26px 30px;margin:28px 0}.info-box h4{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--forest);margin-bottom:14px}.info-box dl{display:grid;grid-template-columns:auto 1fr;gap:8px 24px}.info-box dt{font-size:13px;font-weight:600;color:var(--text-muted)}.info-box dd{font-size:13px;color:var(--charcoal)}
-  .toc{background:var(--cream);border:1px solid var(--cream-dark);border-radius:4px;padding:26px 30px;margin-bottom:36px}.toc h3{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--forest);margin-bottom:14px}.toc ol{padding-left:18px}.toc li{font-size:14px;padding:5px 0}.toc a{color:var(--terracotta);text-decoration:none}
-  .article-body h2{font-family:'Cormorant Garamond',serif;font-size:36px;color:var(--forest);margin:44px 0 18px;padding-top:44px;border-top:1px solid var(--cream-dark)}.article-body h2:first-child{border-top:none;padding-top:0;margin-top:0}.article-body h3{font-family:'Cormorant Garamond',serif;font-size:23px;color:var(--forest);margin:28px 0 10px}.article-body p{font-size:15px;font-weight:300;line-height:1.9;color:var(--charcoal);margin-bottom:18px}.article-body ul{padding-left:22px;margin-bottom:18px}.article-body li{font-size:15px;font-weight:300;line-height:1.85;color:var(--charcoal);margin-bottom:7px}.article-body strong{font-weight:600}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--forest:#1a2e1a;--cream:#faf6ef;--cream-dark:#ede8e0;--terra:#c0542a;--terra-light:#e8845a;--white:#fff;--charcoal:#2a2420;--muted:#7a6e68;--border:#e2ddd7;--max:1100px;--r:6px}
+html{scroll-behavior:smooth}
+body{font-family:'Outfit',sans-serif;background:var(--cream);color:var(--charcoal);font-size:16px;line-height:1.75}
+.zh{display:none}
+body.zh-mode .en{display:none}
+body.zh-mode .zh{display:block}
+body.zh-mode .zhi{display:inline!important}
+body.zh-mode .eni{display:none!important}
+.zhi{display:none}.eni{display:inline}
+.lang-toggle{display:inline-flex;border:1px solid var(--border);border-radius:20px;overflow:hidden;margin-bottom:2rem}
+.lang-btn{padding:.32rem 1rem;font-size:.78rem;cursor:pointer;background:none;border:none;color:var(--muted);font-family:'Outfit',sans-serif;transition:background .2s,color .2s}
+.lang-btn.active{background:var(--forest);color:#fff}
+nav{background:var(--forest);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:58px;position:sticky;top:0;z-index:100}
+.nav-brand{font-family:'Cormorant Garamond',serif;color:var(--cream);font-size:1.2rem;text-decoration:none;letter-spacing:.04em}
+.nav-brand span{color:var(--terra-light);font-style:italic}
+.nav-links{display:flex;gap:1.5rem;list-style:none}
+.nav-links a{color:rgba(255,255,255,.6);text-decoration:none;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;transition:color .2s}
+.nav-links a:hover{color:#fff}
+.breadcrumb{max-width:var(--max);margin:1.2rem auto .4rem;padding:0 1.5rem;font-size:.8rem;color:var(--muted)}
+.breadcrumb a{color:var(--terra);text-decoration:none}
+.hero{position:relative;height:520px;overflow:hidden}
+.hero img{width:100%;height:100%;object-fit:cover;object-position:center 35%}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.1) 0%,rgba(0,0,0,.6) 100%);display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding-bottom:3rem;text-align:center}
+.hero-eye{color:rgba(255,255,255,.7);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;margin-bottom:.5rem}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,5vw,3.8rem);color:#fff;line-height:1.1;font-weight:300}
+.hero h1 em{font-style:italic;color:#f0c080}
+.hero-meta{color:rgba(255,255,255,.7);font-size:.88rem;margin-top:.6rem}
+.hero-badges{display:flex;gap:.8rem;flex-wrap:wrap;justify-content:center;margin-top:1.2rem}
+.badge{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);color:#fff;border-radius:20px;padding:.28rem .85rem;font-size:.75rem;backdrop-filter:blur(4px)}
+.container{max-width:var(--max);margin:0 auto;padding:0 1.5rem 4rem;display:grid;grid-template-columns:1fr 270px;gap:3rem;align-items:start}
+main{min-width:0}
+aside{position:sticky;top:70px}
+.quick-facts{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:.7rem;margin:1.5rem 0 2.5rem}
+.fact-card{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:.75rem 1rem}
+.fact-label{font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:.2rem}
+.fact-value{font-weight:600;font-size:.9rem}
+h2{font-family:'Cormorant Garamond',serif;font-size:1.75rem;margin:2.5rem 0 1rem;border-bottom:2px solid var(--border);padding-bottom:.5rem;color:var(--forest)}
+h3{font-family:'Cormorant Garamond',serif;font-size:1.2rem;margin:1.4rem 0 .4rem;color:var(--forest)}
+p{margin-bottom:.9rem;color:#2a2520;font-size:.95rem}
+.attr-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:1.2rem;margin:1.4rem 0}
+.attr-card{background:#fff;border:1px solid var(--border);border-radius:var(--r);overflow:hidden}
+.attr-card img{width:100%;height:175px;object-fit:cover;display:block}
+.attr-body{padding:.9rem 1.1rem 1.1rem}
+.attr-num{font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.attr-card h3{margin:.2rem 0 .4rem;font-size:1rem}
+.attr-card p{font-size:.85rem;margin:0}
+.day-block{border-left:3px solid var(--terra);padding-left:1.2rem;margin:1.4rem 0 2rem}
+.day-label{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--terra);font-weight:600}
+.day-block h3{margin:.2rem 0 .5rem}
+.day-block img{width:100%;border-radius:var(--r);margin-bottom:.7rem;max-height:280px;object-fit:cover}
+.tip-box{background:#fff8f0;border-left:4px solid var(--terra);border-radius:0 var(--r) var(--r) 0;padding:.9rem 1.2rem;margin:1.5rem 0;font-size:.9rem}
+.tip-box strong{display:block;margin-bottom:.3rem;color:var(--terra);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase}
+.food-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:1rem;margin:1.2rem 0}
+.food-card{background:#fff;border:1px solid var(--border);border-radius:var(--r);overflow:hidden;text-align:center}
+.food-card img{width:100%;height:125px;object-fit:cover}
+.food-body{padding:.65rem .8rem}
+.food-card h4{font-family:'Cormorant Garamond',serif;font-size:.95rem;margin-bottom:.2rem}
+.food-card p{font-size:.78rem;margin:0;color:var(--muted)}
+.ad-slot{background:var(--border);border-radius:var(--r);height:88px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;margin:2rem 0}
+.aff-list{display:flex;flex-direction:column;gap:.55rem}
+.aff-btn{display:flex;align-items:center;gap:.65rem;background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:.7rem 1rem;text-decoration:none;color:var(--charcoal);font-size:.88rem;transition:border-color .2s,box-shadow .2s}
+.aff-btn:hover{border-color:var(--terra);box-shadow:0 2px 8px rgba(192,84,42,.12)}
+.aff-icon{font-size:1.15rem;flex-shrink:0}
+.aff-text strong{display:block;font-size:.85rem}
+.aff-text span{font-size:.74rem;color:var(--muted)}
+.sidebar-card{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:1.1rem;margin-bottom:1.1rem}
+.sidebar-card h4{font-family:'Cormorant Garamond',serif;font-size:.95rem;margin-bottom:.75rem;padding-bottom:.45rem;border-bottom:1px solid var(--border)}
+.sidebar-card ul{list-style:none}
+.sidebar-card ul li{padding:.3rem 0;border-bottom:1px solid var(--border);font-size:.84rem}
+.sidebar-card ul li:last-child{border:none}
+.sidebar-card ul li a{color:var(--terra);text-decoration:none}
+.season-row{display:flex;justify-content:space-between;align-items:center;padding:.3rem 0;border-bottom:1px solid var(--border);font-size:.82rem}
+.season-row:last-child{border:none}
+.stag{font-size:.7rem;padding:.12rem .45rem;border-radius:10px}
+.tag-best{background:#d4edda;color:#155724}
+.tag-hot{background:#fff3cd;color:#856404}
+.tag-off{background:#f8d7da;color:#721c24}
+.related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;margin-top:1.2rem}
+.related-card{background:#fff;border:1px solid var(--border);border-radius:var(--r);overflow:hidden;text-decoration:none;color:var(--charcoal);display:block;transition:transform .2s}
+.related-card:hover{transform:translateY(-3px)}
+.related-card img{width:100%;height:125px;object-fit:cover}
+.related-card-body{padding:.75rem 1rem}
+.related-card h4{font-family:'Cormorant Garamond',serif;font-size:.95rem;margin-bottom:.15rem}
+.related-card p{font-size:.78rem;color:var(--muted);margin:0}
+footer{background:var(--forest);color:rgba(255,255,255,.55);text-align:center;padding:2rem 1rem;font-size:.82rem}
+footer a{color:rgba(255,255,255,.75);text-decoration:none}
+.toc{list-style:none}
+.toc li{padding:.28rem 0;border-bottom:1px solid var(--border);font-size:.84rem}
+.toc li:last-child{border:none}
+.toc a{color:var(--terra);text-decoration:none}
+@media(max-width:768px){.container{grid-template-columns:1fr}aside{position:static}.nav-links{display:none}.hero{height:360px}}
 </style>
 </head>
 <body>
-
-<nav class="site-nav">
-  <a href="index.html" class="nav-logo">La Dolce <span>Vita</span></a>
+<nav>
+  <a class="nav-brand" href="index.html">La Dolce <span>Vita</span></a>
   <ul class="nav-links">
-    <li><a href="destinations.html" class="active">Destinations</a></li>
-    <li><a href="itineraries.html">Itineraries</a></li>
-    <li><a href="blog.html">Travel Tips</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="itineraries.html" class="nav-cta">Plan Your Trip</a></li>
+    <li><a href="index.html"><span class="eni">Home</span><span class="zhi">首页</span></a></li>
+    <li><a href="rome.html">Rome</a></li>
+    <li><a href="florence.html">Florence</a></li>
+    <li><a href="naples.html">Naples</a></li>
   </ul>
 </nav>
-<div class="breadcrumb"><a href="index.html">Home</a><span>›</span><a href="destinations.html">Destinations</a><span>›</span>Milan</div>
+<div class="breadcrumb"><a href="index.html">Home</a> › <a href="index.html">Destinations</a> › Milan</div>
 
-<div class="dest-hero">
-  <img src="images/milan-hero.jpg" alt="Milan, Italy — the Duomo and Galleria Vittorio Emanuele II">
-  <div class="dest-hero-overlay">
-    <h1>Milan<br><em>Travel Guide</em></h1>
-    <div class="dest-hero-meta">
-      <span>📅 Best: March–May, Sept–Nov</span>
-      <span>⏱ Recommended: 2–3 days</span>
-      <span>✈️ Major international hub — MXP &amp; LIN</span>
+<div class="hero">
+  <img src="https://images.unsplash.com/photo-1610016302534-6f67f1c968d8?w=1600&q=85" alt="Milan Duomo"/>
+  <div class="hero-overlay">
+    <p class="hero-eye">Italy · Lombardy</p>
+    <h1>Milan <em>Travel Guide</em><br><span class="zhi" style="font-size:1.6rem">米兰旅行指南</span></h1>
+    <p class="hero-meta">📅 <span class="eni">Best: Mar–May, Sep–Nov</span><span class="zhi">最佳时间：3–5月，9–11月</span> &nbsp;⏱ <span class="eni">Recommended: 2–3 days</span><span class="zhi">建议：2–3天</span></p>
+    <div class="hero-badges">
+      <span class="badge">⛪ Duomo / 大教堂</span>
+      <span class="badge">🖼 Last Supper / 最后的晚餐</span>
+      <span class="badge">👗 Fashion / 时尚</span>
+      <span class="badge">🏔 Lake Como / 科莫湖</span>
     </div>
   </div>
 </div>
 
-<div class="quick-facts">
-  <div class="fact"><div class="fact-label">Region</div><div class="fact-value">Lombardy</div></div>
-  <div class="fact-divider"></div>
-  <div class="fact"><div class="fact-label">Airports</div><div class="fact-value">Malpensa (MXP), Linate (LIN)</div></div>
-  <div class="fact-divider"></div>
-  <div class="fact"><div class="fact-label">From Venice</div><div class="fact-value">2h 20m by high-speed train</div></div>
-  <div class="fact-divider"></div>
-  <div class="fact"><div class="fact-label">Budget / Day</div><div class="fact-value">€80–180</div></div>
-  <div class="fact-divider"></div>
-  <div class="fact"><div class="fact-label">Known For</div><div class="fact-value">Fashion, design, da Vinci</div></div>
+<div class="container">
+<main>
+  <div class="lang-toggle">
+    <button class="lang-btn active" onclick="setLang('en')">English</button>
+    <button class="lang-btn" onclick="setLang('zh')">中文</button>
+  </div>
+
+  <div class="quick-facts">
+    <div class="fact-card"><div class="fact-label">Region / 地区</div><div class="fact-value">Lombardy</div></div>
+    <div class="fact-card"><div class="fact-label">Airport / 机场</div><div class="fact-value">MXP / LIN</div></div>
+    <div class="fact-card"><div class="fact-label">Budget/Day</div><div class="fact-value">€90–200</div></div>
+    <div class="fact-card"><div class="fact-label">From Rome</div><div class="fact-value">3h by train</div></div>
+    <div class="fact-card"><div class="fact-label">Must Book</div><div class="fact-value">Last Supper</div></div>
+    <div class="fact-card"><div class="fact-label">Day Trip</div><div class="fact-value">Lake Como</div></div>
+  </div>
+
+  <div class="en"><p>Milan is Italy's most misunderstood city. Most visitors treat it as a gateway — a place to fly into before heading south. This is a mistake. Milan is a sophisticated, design-obsessed metropolis with world-class museums, a cathedral that took 600 years to build, and one of the greatest paintings in human history hidden in a refectory wall. It rewards those who stay.</p></div>
+  <div class="zh"><p>米兰是意大利最容易被误解的城市。大多数游客把它当作一个门户——飞抵后再向南出发的中转站。这是一个错误。米兰是一座充满设计感的精致大都市，拥有世界级博物馆、一座耗时600年建造的大教堂，以及隐藏在餐厅墙壁上的人类历史上最伟大的画作之一。它值得你留下来细细品味。</p></div>
+
+  <div class="ad-slot">Advertisement / 广告位</div>
+
+  <h2 id="attractions"><span class="eni">Top Attractions</span><span class="zhi">主要景点</span></h2>
+  <div class="attr-grid">
+    <div class="attr-card">
+      <img src="https://images.unsplash.com/photo-1610016302534-6f67f1c968d8?w=600&q=85" alt="Milan Duomo"/>
+      <div class="attr-body">
+        <div class="attr-num">01</div>
+        <h3>Milan Duomo &amp; Rooftop</h3>
+        <p class="en">The largest Gothic cathedral in the world, built over 600 years. The cathedral is free; the rooftop (€13) gives you an extraordinary close-up of the 3,400 statues and spires. Book the rooftop online to avoid queues.</p>
+        <p class="zh">世界上最大的哥特式大教堂，历时600年建造。大教堂免费参观；屋顶（€13）让你近距离欣赏3400座雕像和尖塔。建议网上提前预订屋顶门票以避免排队。</p>
+      </div>
+    </div>
+    <div class="attr-card">
+      <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=600&q=85" alt="The Last Supper"/>
+      <div class="attr-body">
+        <div class="attr-num">02</div>
+        <h3>The Last Supper (Cenacolo)</h3>
+        <p class="en">Leonardo da Vinci's masterpiece, painted 1495–1498. Only 30 visitors are admitted every 15 minutes. Tickets sell out months ahead — book at vivaticket.com the moment you plan your trip. This is non-negotiable.</p>
+        <p class="zh">达·芬奇的杰作，创作于1495–1498年。每15分钟仅允许30名游客入内参观。门票提前数月售罄——制定行程时立刻在vivaticket.com购票。这是必做之事，没有妥协的余地。</p>
+      </div>
+    </div>
+    <div class="attr-card">
+      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=85" alt="Galleria Vittorio Emanuele"/>
+      <div class="attr-body">
+        <div class="attr-num">03</div>
+        <h3>Galleria Vittorio Emanuele II</h3>
+        <p class="en">Italy's oldest shopping mall, built in 1877 — a stunning iron-and-glass arcade connecting the Duomo to La Scala opera house. Walk through it at least twice: once during the day, once at night when it's illuminated.</p>
+        <p class="zh">意大利最古老的购物拱廊，建于1877年——一座华丽的铁与玻璃拱廊，连接大教堂与斯卡拉歌剧院。至少走两遍：白天一次，夜晚灯火通明时再走一次。</p>
+      </div>
+    </div>
+    <div class="attr-card">
+      <img src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=600&q=85" alt="Brera Milan"/>
+      <div class="attr-body">
+        <div class="attr-num">04</div>
+        <h3>Brera &amp; Navigli Districts</h3>
+        <p class="en">Brera is Milan's most charming neighbourhood — art galleries, independent boutiques, and the excellent Pinacoteca di Brera art gallery. Navigli (the canal district) is where Milan does aperitivo — go at 6pm for the best atmosphere.</p>
+        <p class="zh">布雷拉是米兰最迷人的街区——艺术画廊、独立精品店和卓越的布雷拉美术馆。纳维利（运河区）是米兰人享用餐前酒的地方——傍晚6点前往，体验最佳氛围。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ad-slot">Advertisement / 广告位</div>
+
+  <h2 id="itinerary"><span class="eni">3-Day Milan Itinerary</span><span class="zhi">米兰3日行程</span></h2>
+
+  <div class="day-block">
+    <div class="day-label">Day 1 · 第一天</div>
+    <h3><span class="eni">Duomo, Galleria & Brera</span><span class="zhi">大教堂、拱廊与布雷拉</span></h3>
+    <img src="https://images.unsplash.com/photo-1610016302534-6f67f1c968d8?w=900&q=85" alt="Milan Duomo"/>
+    <p class="en">Start at the Duomo — arrive early to beat the school groups. Climb to the rooftop. Walk through the Galleria to Piazza della Scala. Afternoon in Brera: the Pinacoteca (Raphael's Betrothal of the Virgin is here) and the neighbourhood streets. Evening aperitivo in Navigli.</p>
+    <p class="zh">从大教堂开始——早到以避开学生团体。登上屋顶。穿过拱廊走向斯卡拉广场。下午游览布雷拉：布雷拉美术馆（拉斐尔的《圣母的婚礼》就在这里）和周边街道。傍晚在纳维利享用餐前酒。</p>
+  </div>
+
+  <div class="day-block">
+    <div class="day-label">Day 2 · 第二天</div>
+    <h3><span class="eni">The Last Supper & Fashion District</span><span class="zhi">最后的晚餐与时尚区</span></h3>
+    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=85" alt="Milan fashion"/>
+    <p class="en">Morning: The Last Supper (at your pre-booked time — arrive 15 minutes early, no late entry). The experience lasts exactly 15 minutes. Afternoon: walk the Quadrilatero della Moda (Golden Rectangle) — Via Montenapoleone, Via della Spiga. Window shopping is free. Evening: dinner in Isola neighbourhood.</p>
+    <p class="zh">上午：最后的晚餐（按预订时间前往——提前15分钟到达，不接受迟到入场）。整个体验精确持续15分钟。下午：漫步时尚四边形（黄金四边形）——蒙特拿破仑大街、斯皮加街。橱窗购物免费。晚上：在伊索拉街区用餐。</p>
+  </div>
+
+  <div class="tip-box">
+    <strong>💡 Last Supper Booking / 最后的晚餐预订</strong>
+    <span class="en">Book at vivaticket.com exactly 3 months before your visit — tickets are released in batches and sell out within minutes. Set a calendar reminder. If you miss the official tickets, some tour operators offer "unofficial" viewings — these are legitimate but more expensive.</span>
+    <span class="zh">在参观日期前整整3个月登录vivaticket.com购票——门票分批发售，几分钟内售罄。设置日历提醒。如果错过官方票，部分旅行社提供"非官方"参观——这些是合法的，但价格更贵。</span>
+  </div>
+
+  <div class="day-block">
+    <div class="day-label">Day 3 · 第三天</div>
+    <h3><span class="eni">Lake Como Day Trip</span><span class="zhi">科莫湖一日游</span></h3>
+    <img src="https://images.unsplash.com/photo-1499678329028-101435549a4e?w=900&q=85" alt="Lake Como"/>
+    <p class="en">Take the 40-minute train from Milan Centrale to Como. Hop on the ferry to Bellagio — the most beautiful village on the lake. Walk the promenade, visit Villa Melzi gardens, and have lunch overlooking the water. Return train from Como in the late afternoon. Back in Milan by 7pm.</p>
+    <p class="zh">从米兰中央火车站乘坐40分钟火车前往科莫。搭乘渡轮前往贝拉吉奥——湖上最美丽的村庄。漫步长廊，参观梅尔齐别墅花园，在湖景餐厅享用午餐。傍晚从科莫乘火车返回，19点前抵达米兰。</p>
+  </div>
+
+  <h2 id="food"><span class="eni">Food &amp; Drink in Milan</span><span class="zhi">米兰美食与饮品</span></h2>
+  <p class="en">Milan's cuisine is richer and more northern than Rome or Naples — butter replaces olive oil, risotto replaces pasta. The city also invented aperitivo culture: at 6pm, order a Campari Spritz and get free snacks.</p>
+  <p class="zh">米兰的饮食比罗马或那不勒斯更为丰富、更具北方特色——黄油取代橄榄油，烩饭取代意面。这座城市还发明了餐前酒文化：傍晚6点，点一杯金巴利气泡酒，免费小吃随之而来。</p>
+
+  <div class="food-grid">
+    <div class="food-card">
+      <img src="https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=400&q=85" alt="Risotto alla Milanese"/>
+      <div class="food-body"><h4>Risotto alla Milanese</h4><p class="en">Saffron risotto. The defining dish of Milan.</p><p class="zh">番红花烩饭。米兰最具代表性的菜肴。</p></div>
+    </div>
+    <div class="food-card">
+      <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400&q=85" alt="Cotoletta"/>
+      <div class="food-body"><h4>Cotoletta alla Milanese</h4><p class="en">Milan's breaded veal cutlet — the original schnitzel.</p><p class="zh">米兰炸小牛排——原版维也纳炸肉排。</p></div>
+    </div>
+    <div class="food-card">
+      <img src="https://images.unsplash.com/photo-1563227812-0ea4c22e6cc8?w=400&q=85" alt="Aperitivo"/>
+      <div class="food-body"><h4>Aperitivo Hour</h4><p class="en">€10 buys a Spritz and access to a free buffet. Milan invented this.</p><p class="zh">€10享有一杯气泡酒加免费小吃自助。这是米兰的发明。</p></div>
+    </div>
+    <div class="food-card">
+      <img src="https://images.unsplash.com/photo-1548365328-8c6db3220e4c?w=400&q=85" alt="Panettone"/>
+      <div class="food-body"><h4>Panettone</h4><p class="en">Milan's famous Christmas bread — but sold year-round in the best pasticcerie.</p><p class="zh">米兰著名的圣诞面包——但在最好的糕点店全年有售。</p></div>
+    </div>
+  </div>
+
+  <h2 id="book"><span class="eni">Book Your Milan Trip</span><span class="zhi">预订你的米兰之旅</span></h2>
+  <p style="font-size:.82rem;color:var(--muted)" class="en">Affiliate links — booking through these helps support this free guide.</p>
+  <p style="font-size:.82rem;color:var(--muted)" class="zh">以下为联盟链接，通过这些链接预订有助于维持这份免费指南的运营。</p>
+  <div class="aff-list" style="margin-top:1rem">
+    <a class="aff-btn" href="#" target="_blank" rel="noopener">
+      <span class="aff-icon">🖼</span>
+      <div class="aff-text"><strong><span class="eni">The Last Supper — Guided Tour</span><span class="zhi">最后的晚餐导览票</span></strong><span>GetYourGuide</span></div>
+    </a>
+    <a class="aff-btn" href="#" target="_blank" rel="noopener">
+      <span class="aff-icon">⛪</span>
+      <div class="aff-text"><strong><span class="eni">Duomo Rooftop Ticket</span><span class="zhi">大教堂屋顶门票</span></strong><span>GetYourGuide</span></div>
+    </a>
+    <a class="aff-btn" href="#" target="_blank" rel="noopener">
+      <span class="aff-icon">🏔</span>
+      <div class="aff-text"><strong><span class="eni">Lake Como Day Trip from Milan</span><span class="zhi">从米兰出发科莫湖一日游</span></strong><span>Viator</span></div>
+    </a>
+    <a class="aff-btn" href="#" target="_blank" rel="noopener">
+      <span class="aff-icon">🏨</span>
+      <div class="aff-text"><strong><span class="eni">Hotels in Milan</span><span class="zhi">米兰酒店</span></strong><span>Booking.com</span></div>
+    </a>
+    <a class="aff-btn" href="#" target="_blank" rel="noopener">
+      <span class="aff-icon">🚆</span>
+      <div class="aff-text"><strong><span class="eni">Milan → Venice / Florence Train</span><span class="zhi">米兰→威尼斯/佛罗伦萨火车</span></strong><span>Omio</span></div>
+    </a>
+  </div>
+
+  <div class="ad-slot">Advertisement / 广告位</div>
+
+  <h2><span class="eni">More Italy Guides</span><span class="zhi">更多意大利指南</span></h2>
+  <div class="related-grid">
+    <a class="related-card" href="rome.html"><img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=500&q=85" alt="Rome" style="object-position:center 40%"/><div class="related-card-body"><h4>Rome</h4><p><span class="eni">Colosseum, Vatican & beyond</span><span class="zhi">斗兽场、梵蒂冈及更多</span></p></div></a>
+    <a class="related-card" href="florence.html"><img src="https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?w=500&q=85" alt="Florence"/><div class="related-card-body"><h4>Florence</h4><p><span class="eni">Art, Uffizi & Tuscany</span><span class="zhi">艺术、乌菲齐与托斯卡纳</span></p></div></a>
+    <a class="related-card" href="naples.html"><img src="https://images.unsplash.com/photo-1555993539-1732b0258235?w=500&q=85" alt="Naples"/><div class="related-card-body"><h4>Naples</h4><p><span class="eni">Pizza, Pompeii & Vesuvius</span><span class="zhi">披萨、庞贝与维苏威</span></p></div></a>
+  </div>
+</main>
+
+<aside>
+  <div class="sidebar-card">
+    <h4>📋 <span class="eni">In This Guide</span><span class="zhi">本文目录</span></h4>
+    <ul class="toc">
+      <li><a href="#attractions">🏛 <span class="eni">Top Attractions</span><span class="zhi">主要景点</span></a></li>
+      <li><a href="#itinerary">🗓 <span class="eni">3-Day Itinerary</span><span class="zhi">3日行程</span></a></li>
+      <li><a href="#food">🍝 <span class="eni">Food & Drink</span><span class="zhi">美食饮品</span></a></li>
+      <li><a href="#book">🎫 <span class="eni">Book Your Trip</span><span class="zhi">预订行程</span></a></li>
+    </ul>
+  </div>
+  <div class="sidebar-card">
+    <h4>🌤 <span class="eni">Best Time to Visit</span><span class="zhi">最佳时间</span></h4>
+    <div class="season-row"><span>March–May</span><span class="stag tag-best">⭐ Best</span></div>
+    <div class="season-row"><span>June–August</span><span class="stag tag-hot">🌡 Hot</span></div>
+    <div class="season-row"><span>Sep–November</span><span class="stag tag-best">⭐ Best</span></div>
+    <div class="season-row"><span>December–Feb</span><span class="stag tag-off">❄ Cold</span></div>
+  </div>
+  <div class="sidebar-card">
+    <h4>⚡ <span class="eni">Quick Book</span><span class="zhi">快速预订</span></h4>
+    <div class="aff-list" style="gap:.4rem">
+      <a class="aff-btn" href="#" style="padding:.5rem .8rem"><span class="aff-icon">🖼</span><div class="aff-text"><strong style="font-size:.8rem">Last Supper Tour</strong><span style="font-size:.7rem">GetYourGuide</span></div></a>
+      <a class="aff-btn" href="#" style="padding:.5rem .8rem"><span class="aff-icon">🏔</span><div class="aff-text"><strong style="font-size:.8rem">Lake Como Day Trip</strong><span style="font-size:.7rem">Viator</span></div></a>
+      <a class="aff-btn" href="#" style="padding:.5rem .8rem"><span class="aff-icon">🏨</span><div class="aff-text"><strong style="font-size:.8rem">Hotels Milan</strong><span style="font-size:.7rem">Booking.com</span></div></a>
+    </div>
+  </div>
+  <div class="sidebar-card">
+    <h4>🗺 <span class="eni">Nearby</span><span class="zhi">周边</span></h4>
+    <ul>
+      <li><a href="#">Lake Como (40min) →</a></li>
+      <li><a href="venice.html">Venice (2h 20m) →</a></li>
+      <li><a href="florence.html">Florence (1h 45m) →</a></li>
+    </ul>
+  </div>
+</aside>
 </div>
 
-<div class="photo-strip">
-  <div class="photo-strip-item">
-    <img src="images/milan-duomo.jpg" alt="Milan Duomo cathedral" style="object-position:center 30%;">
-    <div class="photo-strip-label">The Duomo</div>
-  </div>
-  <div class="photo-strip-item">
-    <img src="images/milan-galleria.jpg" alt="Galleria Vittorio Emanuele II Milan" style="object-position:center 40%;">
-    <div class="photo-strip-label">Galleria Vittorio Emanuele</div>
-  </div>
-  <div class="photo-strip-item">
-    <img src="images/milan-aperitivo.jpg" alt="Milan aperitivo Navigli" style="object-position:center center;">
-    <div class="photo-strip-label">Navigli Aperitivo</div>
-  </div>
-</div>
-
-<div class="content-layout">
-  <main>
-    <div class="ad-zone ad-banner">Advertisement</div>
-    <div class="toc">
-      <h3>In This Guide</h3>
-      <ol>
-        <li><a href="#top-attractions">Top Attractions</a></li>
-        <li><a href="#neighbourhoods">Neighbourhoods</a></li>
-        <li><a href="#itinerary">2-Day Itinerary</a></li>
-        <li><a href="#shopping">Shopping &amp; Fashion</a></li>
-        <li><a href="#food">Food &amp; Aperitivo</a></li>
-        <li><a href="#tips">Practical Tips</a></li>
-      </ol>
-    </div>
-
-    <div class="article-body">
-
-      <p>Milan is the city Italians go to when they want to get things done — and visitors who come expecting the romantic, unhurried Italy of Rome or Tuscany are often surprised by its energy, ambition, and modernity. But beneath the fashion boutiques and financial districts is a city of extraordinary art, one of the world's great cathedrals, and an aperitivo culture so embedded in daily life that it has its own hour. Milan rewards those who know where to look.</p>
-
-      <div class="info-box">
-        <h4>Milan at a Glance</h4>
-        <dl>
-          <dt>Best for</dt><dd>Art, fashion, design, aperitivo, day trips to the lakes</dd>
-          <dt>Don't miss</dt><dd>The Last Supper, the Duomo rooftop, aperitivo in the Navigli</dd>
-          <dt>Book ahead</dt><dd>The Last Supper — essential, often sold out months ahead</dd>
-          <dt>Avoid</dt><dd>Fashion Week (Feb/Sept) unless you want high prices and no hotel rooms</dd>
-          <dt>Budget / day</dt><dd>€80–180 (comparable to Rome)</dd>
-        </dl>
-      </div>
-
-      <h2 id="top-attractions">Top Attractions in Milan</h2>
-
-      <div class="attraction-grid">
-        <div class="attraction-card">
-          <div class="attraction-card-img">
-            <img src="images/milan-duomo.jpg" alt="Milan Duomo cathedral" style="object-position:center 30%;">
-            <div class="attraction-card-num">1</div>
-          </div>
-          <div class="attraction-card-body">
-            <h3 class="attraction-name">The Duomo</h3>
-            <p class="attraction-desc">One of the world's largest and most elaborate Gothic cathedrals — 600 years in the making, with 3,400 statues, 135 spires, and a rooftop terrace where you can walk among the pinnacles above the city. Climb to the roof (lifts or stairs, €15–22) for the finest view of Milan. Book online.</p>
-          </div>
-        </div>
-        <div class="attraction-card">
-          <div class="attraction-card-img">
-            <img src="images/milan-last-supper.jpg" alt="Leonardo da Vinci Last Supper Milan" style="object-position:center 35%;">
-            <div class="attraction-card-num">2</div>
-          </div>
-          <div class="attraction-card-body">
-            <h3 class="attraction-name">The Last Supper</h3>
-            <p class="attraction-desc">Leonardo da Vinci's masterpiece, painted directly onto the wall of Santa Maria delle Grazie's refectory in 1495–98. Entry is strictly timed, 15 minutes per group, maximum 30 visitors. Book at cenacolovinciano.vivaticket.it — often sold out 2–3 months ahead. Non-negotiable advance booking.</p>
-          </div>
-        </div>
-        <div class="attraction-card">
-          <div class="attraction-card-img">
-            <img src="images/milan-galleria.jpg" alt="Galleria Vittorio Emanuele II" style="object-position:center 40%;">
-            <div class="attraction-card-num">3</div>
-          </div>
-          <div class="attraction-card-body">
-            <h3 class="attraction-name">Galleria Vittorio Emanuele II</h3>
-            <p class="attraction-desc">The world's oldest shopping mall (1877), with a spectacular iron-and-glass vaulted ceiling. Stand on the Toro — the bull mosaic in the floor — and spin on your heel for good luck (the locals do it). Prada, Gucci, Louis Vuitton are here; the prices are for watching, not buying.</p>
-          </div>
-        </div>
-        <div class="attraction-card">
-          <div class="attraction-card-img">
-            <img src="images/milan-brera.jpg" alt="Brera Art Gallery Milan" style="object-position:center 35%;">
-            <div class="attraction-card-num">4</div>
-          </div>
-          <div class="attraction-card-body">
-            <h3 class="attraction-name">Pinacoteca di Brera</h3>
-            <p class="attraction-desc">Milan's finest art museum — Raphael's Marriage of the Virgin, Mantegna's extraordinary Dead Christ, Caravaggio, Titian. Less overwhelming than the Uffizi in scale, but with a collection of comparable quality. In the bohemian Brera neighbourhood, with the best café scene in Milan.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="photo-break">
-        <img src="images/milan-duomo-roof.jpg" alt="Milan Duomo rooftop terrace spires" style="object-position:center 40%;">
-        <div class="photo-break-caption">
-          <h3>Above the Spires — The Duomo Rooftop</h3>
-          <p>Walking among the white marble pinnacles and statues of the Duomo rooftop, with the Alps visible on clear days to the north and the city spreading in every direction below, is one of the most unusual and memorable experiences in Italy. Book online and take the lift — no need to climb 250 steps unless you want to.</p>
-        </div>
-      </div>
-
-      <div class="ad-zone ad-rectangle">Advertisement</div>
-
-      <h2 id="neighbourhoods">Milan's Best Neighbourhoods</h2>
-
-      <div class="neighbourhood-grid">
-        <div class="neighbourhood-card">
-          <div class="neighbourhood-img"><img src="images/milan-brera-street.jpg" alt="Brera neighbourhood Milan" style="object-position:center 40%;"></div>
-          <div class="neighbourhood-body"><h4>Brera</h4><p>Milan's artsy bohemian village — cobblestone streets, independent galleries, excellent restaurants, and the Pinacoteca di Brera. The most atmospheric neighbourhood in the city.</p></div>
-        </div>
-        <div class="neighbourhood-card">
-          <div class="neighbourhood-img"><img src="images/milan-navigli.jpg" alt="Navigli canals Milan aperitivo" style="object-position:center center;"></div>
-          <div class="neighbourhood-body"><h4>Navigli</h4><p>Milan's canal district — lined with aperitivo bars, restaurants, antique market on Sundays. The best place for an evening in Milan, especially in summer when tables spill onto the canal banks.</p></div>
-        </div>
-        <div class="neighbourhood-card">
-          <div class="neighbourhood-img"><img src="images/milan-porta-nuova.jpg" alt="Porta Nuova modern district Milan" style="object-position:center 35%;"></div>
-          <div class="neighbourhood-body"><h4>Porta Nuova</h4><p>Milan's modern face — the Vertical Forest (Bosco Verticale), the Unicredit Tower, and the Piazza Gae Aulenti. A striking contrast to the historic centre and worth seeing for the architecture alone.</p></div>
-        </div>
-      </div>
-
-      <h2 id="itinerary">The Perfect 2-Day Milan Itinerary</h2>
-
-      <div class="day-block">
-        <div class="day-block-img">
-          <img src="images/milan-duomo.jpg" alt="Milan Day 1 Duomo and centre" style="object-position:center 30%;">
-        </div>
-        <div class="day-block-body">
-          <div class="day-label">Day 1</div>
-          <h3>The Duomo, Galleria &amp; Brera</h3>
-          <p>Start at the Duomo before the crowds arrive — walk around the exterior first, then go inside (free) before buying your rooftop ticket. Cross the Piazza del Duomo to the Galleria Vittorio Emanuele II — coffee at Café Biffi or Savini if budget allows, or any standing bar otherwise. Walk north to the Brera neighbourhood for lunch. Afternoon at the Pinacoteca di Brera (allow 2 hours). Evening aperitivo in Brera — Camparino in the Galleria is the classic choice for a Campari Negroni.</p>
-        </div>
-      </div>
-
-      <div class="day-block">
-        <div class="day-block-img">
-          <img src="images/milan-last-supper.jpg" alt="Last Supper Santa Maria delle Grazie Milan Day 2" style="object-position:center 40%;">
-        </div>
-        <div class="day-block-body">
-          <div class="day-label">Day 2</div>
-          <h3>The Last Supper, Castello &amp; Navigli</h3>
-          <p>The Last Supper (pre-booked, specific time slot — arrive 15 minutes early, entry is refused if late). The church of Santa Maria delle Grazie is also worth seeing. Walk to the Castello Sforzesco — the Michelangelo Pietà Rondanini is inside, his final unfinished work, deeply moving. Lunch in Sempione park. Afternoon in the fashion district (Via Montenapoleone, Via della Spiga) — more for window-shopping than buying. Evening in the Navigli canals for aperitivo and dinner.</p>
-        </div>
-      </div>
-
-      <div class="tip-box">
-        <strong>The Last Supper — Non-Negotiable Booking Rules</strong>
-        <p>Book at cenacolovinciano.vivaticket.it, minimum 2 months ahead (often more in peak season). Each session lasts exactly 15 minutes. If you arrive late, you will not be admitted and will forfeit your ticket. There are no exceptions. Set an alarm.</p>
-      </div>
-
-      <h2 id="shopping">Shopping &amp; Fashion</h2>
-
-      <div class="inline-media">
-        <div class="inline-media-img">
-          <img src="images/milan-fashion.jpg" alt="Milan fashion district Via Montenapoleone" style="object-position:center 40%;">
-        </div>
-        <div class="inline-media-text">
-          <h3>The Quadrilatero della Moda</h3>
-          <p>Milan's famous fashion rectangle — Via Montenapoleone, Via della Spiga, Via Sant'Andrea, and Corso Venezia — contains the flagship stores of every major Italian and international fashion house. Prada, Gucci, Versace, Armani, Dolce &amp; Gabbana are all here.</p>
-          <p>For more accessible shopping, Corso Buenos Aires is Milan's high-street equivalent — 1km of shops at ordinary prices. The Navigli antique market (last Sunday of the month) is excellent for vintage clothing and design objects.</p>
-        </div>
-      </div>
-
-      <h2 id="food">Food &amp; Aperitivo in Milan</h2>
-      <p>Milanese cuisine is richer and more northern than the rest of Italy — risotto, ossobuco, and cotoletta (the original Wiener Schnitzel) define the city's food identity. But Milan's true culinary institution is aperitivo.</p>
-      <ul>
-        <li><strong>Aperitivo:</strong> Milan invented the concept of free food with drinks — order a Campari Spritz or Negroni between 6–9pm and most bars bring out a spread of nibbles, sometimes elaborate enough to replace dinner. The Navigli district has the best aperitivo scene.</li>
-        <li><strong>Risotto alla Milanese:</strong> Saffron risotto, golden and creamy — the city's signature dish. Order it at a traditional trattoria, not a tourist restaurant. Risotto al salto (leftover risotto fried into a crispy cake) is even better.</li>
-        <li><strong>Cotoletta alla Milanese:</strong> Breaded veal cutlet, pan-fried in butter — flatter and wider than the Austrian version. The bone should be left on. Try it at Trattoria del Nuovo Macello.</li>
-        <li><strong>Panettone:</strong> Milan's Christmas cake — available year-round from good bakeries. Pasticceria Marchesi (Via Santa Maria alla Porta) makes one of the finest in the city.</li>
-      </ul>
-
-      <h2 id="tips">Practical Tips</h2>
-      <ul>
-        <li>Milan has two airports — <strong>Malpensa (MXP)</strong>, 50km from the centre (Malpensa Express train, 40 mins, €13), and <strong>Linate (LIN)</strong>, 7km from the centre (bus, 30 mins, €5). Most international flights use Malpensa.</li>
-        <li>The metro (4 lines) is efficient and covers the main sights. A 24-hour pass (€7) is good value if you're moving between neighbourhoods.</li>
-        <li><strong>Fashion Week</strong> runs in February and September — hotels double in price and the city is overwhelmed. Avoid these weeks unless fashion is the specific reason to visit.</li>
-        <li>Milan is the best base for <strong>day trips to the Italian Lakes</strong> — Lake Como (1 hour by train to Como), Lake Maggiore (1 hour), and Lake Garda (1.5 hours to Desenzano).</li>
-        <li>The city's nightlife is centred on the Navigli and Brera districts. Bars stay open until 2am; clubs until dawn.</li>
-      </ul>
-
-    </div>
-
-    <div style="margin-top:56px;padding-top:40px;border-top:1px solid var(--cream-dark);">
-      <p class="section-kicker">Continue Reading</p>
-      <h3 style="font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--forest);margin-bottom:24px;">More Italy Guides</h3>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
-        <a href="venice.html" style="display:flex;gap:14px;padding:16px;border:1px solid var(--cream-dark);border-radius:4px;text-decoration:none;color:inherit;">
-          <div style="width:80px;height:80px;border-radius:3px;overflow:hidden;flex-shrink:0;"><img src="images/venice-hero.jpg" style="width:100%;height:100%;object-fit:cover;" alt="Venice"></div>
-          <div><p style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--forest);margin-bottom:5px;line-height:1.3;">Venice Travel Guide</p><p style="font-size:12px;color:var(--text-light);">2h 20m by train from Milan</p></div>
-        </a>
-        <a href="bologna.html" style="display:flex;gap:14px;padding:16px;border:1px solid var(--cream-dark);border-radius:4px;text-decoration:none;color:inherit;">
-          <div style="width:80px;height:80px;border-radius:3px;overflow:hidden;flex-shrink:0;"><img src="images/bologna-hero.jpg" style="width:100%;height:100%;object-fit:cover;" alt="Bologna"></div>
-          <div><p style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--forest);margin-bottom:5px;line-height:1.3;">Bologna Travel Guide</p><p style="font-size:12px;color:var(--text-light);">1h by train — Italy's food capital</p></div>
-        </a>
-      </div>
-    </div>
-  </main>
-
-  <aside class="sidebar">
-    <div class="ad-zone ad-sidebar">Advertisement</div>
-    <div class="sidebar-widget">
-      <h3>Milan Quick Links</h3>
-      <ul>
-        <li><a href="#">🎫 Book The Last Supper</a></li>
-        <li><a href="#">🎫 Book Duomo Rooftop</a></li>
-        <li><a href="#">🚇 Milan Metro Map</a></li>
-        <li><a href="#">🚆 Malpensa Express Train</a></li>
-        <li><a href="#">🚆 Milan → Venice Train</a></li>
-      </ul>
-    </div>
-    <div class="sidebar-widget">
-      <h3>Best Time to Visit</h3>
-      <div style="display:flex;flex-direction:column;gap:8px;">
-        <div style="display:flex;justify-content:space-between;font-size:13px;"><span>March – May</span><span style="color:var(--terracotta);font-weight:600;">⭐ Best</span></div>
-        <div style="display:flex;justify-content:space-between;font-size:13px;"><span>Feb / Sept</span><span style="color:var(--sand);">👗 Fashion Week</span></div>
-        <div style="display:flex;justify-content:space-between;font-size:13px;"><span>June – August</span><span style="color:var(--sand);">🌡 Hot, quiet</span></div>
-        <div style="display:flex;justify-content:space-between;font-size:13px;"><span>Sept – November</span><span style="color:var(--terracotta);font-weight:600;">⭐ Best</span></div>
-      </div>
-    </div>
-    <div class="sidebar-widget">
-      <h3>Day Trips from Milan</h3>
-      <ul>
-        <li><a href="#">Lake Como (1h by train) →</a></li>
-        <li><a href="#">Lake Maggiore (1h) →</a></li>
-        <li><a href="venice.html">Venice (2h 20m) →</a></li>
-        <li><a href="bologna.html">Bologna (1h) →</a></li>
-        <li><a href="florence.html">Florence (1h 45m) →</a></li>
-      </ul>
-    </div>
-    <div class="ad-zone" style="height:250px;border-radius:4px;font-size:12px;">Advertisement</div>
-  </aside>
-</div>
-
-<footer class="site-footer">
-  <div class="footer-grid">
-    <div><div class="footer-brand">La Dolce <span>Vita</span></div><p class="footer-tagline">Italy's most comprehensive travel guide.</p></div>
-    <div class="footer-col"><h4>Destinations</h4><ul><li><a href="rome.html">Rome</a></li><li><a href="florence.html">Florence</a></li><li><a href="venice.html">Venice</a></li><li><a href="milan.html">Milan</a></li><li><a href="destinations.html">View All →</a></li></ul></div>
-    <div class="footer-col"><h4>Plan</h4><ul><li><a href="blog.html">All Guides</a></li><li><a href="itineraries.html">Itineraries</a></li></ul></div>
-    <div class="footer-col"><h4>About</h4><ul><li><a href="about.html">About Us</a></li></ul></div>
-  </div>
-  <div class="footer-bottom"><p>© 2026 La Dolce Vita Italy Travel Guide. All rights reserved.</p><p>Made with ❤️ for Italy lovers everywhere</p></div>
+<footer>
+  <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:#eee;margin-bottom:.4rem">La Dolce <span style="color:var(--terra-light);font-style:italic">Vita</span></p>
+  <p><a href="index.html">Home</a> · <a href="rome.html">Rome</a> · <a href="florence.html">Florence</a> · <a href="naples.html">Naples</a> · <a href="amalfi.html">Amalfi</a></p>
+  <p style="margin-top:.8rem">© 2026 La Dolce Vita Italy Travel Guide</p>
 </footer>
+<script>
+function setLang(l){
+  document.querySelectorAll('.lang-btn').forEach((b,i)=>b.classList.toggle('active',i===(l==='en'?0:1)));
+  document.body.classList.toggle('zh-mode',l==='zh');
+}
+</script>
 </body>
 </html>
