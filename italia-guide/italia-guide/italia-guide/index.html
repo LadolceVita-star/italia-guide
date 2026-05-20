@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>La Dolce Vita — Italy Travel Guide 2026 | 意大利旅行指南</title>
+<meta name="description" content="The complete Italy travel guide for 2026. Rome, Florence, Venice, Amalfi Coast and beyond. 意大利最全面的旅行指南。"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--forest:#1a2e1a;--cream:#faf6ef;--cream-dark:#ede8e0;--terra:#c0542a;--terra-light:#e8845a;--white:#fff;--charcoal:#2a2420;--muted:#7a6e68;--border:#e2ddd7}
+html{scroll-behavior:smooth}
+body{font-family:'Outfit',sans-serif;background:var(--cream);color:var(--charcoal);line-height:1.7}
+.zh{display:none}
+body.zh-mode .en{display:none}
+body.zh-mode .zh{display:block}
+body.zh-mode .zhi{display:inline!important}
+body.zh-mode .eni{display:none!important}
+.zhi{display:none}.eni{display:inline}
+.lang-toggle{display:inline-flex;border:1px solid rgba(255,255,255,.3);border-radius:20px;overflow:hidden}
+.lang-btn{padding:.3rem .9rem;font-size:.78rem;cursor:pointer;background:none;border:none;color:rgba(255,255,255,.65);font-family:'Outfit',sans-serif;transition:background .2s,color .2s}
+.lang-btn.active{background:rgba(255,255,255,.2);color:#fff}
+.nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 3rem;height:60px;background:rgba(26,46,26,.93);backdrop-filter:blur(12px)}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:300;color:#fff;text-decoration:none}
+.nav-logo span{color:var(--terra-light);font-style:italic}
+.nav-right{display:flex;align-items:center;gap:2rem}
+.nav-links{display:flex;gap:1.8rem;list-style:none}
+.nav-links a{font-size:.75rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.6);text-decoration:none;transition:color .2s}
+.nav-links a:hover{color:#fff}
+.hero{position:relative;height:100vh;min-height:580px;display:flex;align-items:flex-end;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=1800&q=85') center/cover no-repeat}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,20,10,.92) 0%,rgba(10,20,10,.25) 60%,transparent 100%)}
+.hero-content{position:relative;z-index:1;width:100%;padding:0 5rem 5rem}
+.hero-eyebrow{font-size:.72rem;letter-spacing:.25em;text-transform:uppercase;color:var(--terra-light);font-weight:500;margin-bottom:1rem}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3.5rem,7vw,6rem);font-weight:300;line-height:1;color:#fff;margin-bottom:.5rem}
+.hero h1 em{font-style:italic;color:var(--terra-light)}
+.hero-sub{font-size:1rem;font-weight:300;color:rgba(255,255,255,.65);max-width:500px;margin-bottom:2.5rem;line-height:1.75}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap}
+.btn-p{background:var(--terra);color:#fff;border:none;padding:.85rem 2rem;font-family:'Outfit',sans-serif;font-size:.8rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:background .2s}
+.btn-p:hover{background:#a8431c}
+.btn-o{background:none;color:rgba(255,255,255,.8);border:1px solid rgba(255,255,255,.3);padding:.85rem 2rem;font-family:'Outfit',sans-serif;font-size:.8rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;text-decoration:none}
+.stats{background:var(--forest);padding:2rem 5rem;display:flex;align-items:center;gap:0}
+.stat{flex:1;text-align:center;padding:0 2rem}
+.stat-n{font-family:'Cormorant Garamond',serif;font-size:2.6rem;font-weight:300;color:var(--terra-light);line-height:1}
+.stat-l{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-top:.3rem}
+.stat-div{width:1px;height:44px;background:rgba(255,255,255,.1);flex-shrink:0}
+.ad{background:var(--cream-dark);height:90px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase}
+.dest-section{background:#fff;padding:4rem}
+.dest-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:2.5rem}
+.kicker{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--terra);font-weight:600;margin-bottom:.6rem}
+.sec-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:300;color:var(--forest);line-height:1.15}
+.sec-title em{font-style:italic;color:var(--terra)}
+.view-all{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--terra);text-decoration:none;font-weight:500}
+
+/* 城市卡片 - 固定尺寸3x3网格 */
+.city-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(3,260px);gap:10px}
+.city-card{position:relative;overflow:hidden;border-radius:6px;display:block;text-decoration:none}
+.city-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.7) saturate(1.1);transition:transform .6s}
+.city-card:hover img{transform:scale(1.06)}
+.city-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(8,18,8,.92) 0%,rgba(8,18,8,.1) 60%,transparent 100%);display:flex;flex-direction:column;justify-content:flex-end;padding:1.3rem 1.4rem}
+.city-tag{font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--terra-light);margin-bottom:.25rem}
+.city-name{font-family:'Cormorant Garamond',serif;font-size:1.55rem;font-weight:300;color:#fff;line-height:1.1;margin-bottom:.2rem}
+.city-name small{font-size:.78rem;font-family:'Outfit',sans-serif;font-weight:300;opacity:.55;margin-left:.3rem}
+.city-desc{font-size:.72rem;color:rgba(255,255,255,.6);font-weight:300;line-height:1.5}
+
+.feat-section{background:var(--cream);padding:5rem 4rem}
+.feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.5rem}
+.feat-card{background:#fff;border:1px solid var(--cream-dark);border-radius:6px;overflow:hidden}
+.feat-card img{width:100%;height:190px;object-fit:cover;filter:brightness(.85)}
+.feat-body{padding:1.5rem}
+.feat-icon{font-size:1.4rem;margin-bottom:.7rem}
+.feat-card h4{font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:var(--forest);margin-bottom:.4rem}
+.feat-card p{font-size:.83rem;color:var(--muted);font-weight:300;line-height:1.7;margin:0}
+
+.itin-section{background:var(--cream-dark);padding:5rem 4rem}
+.itin-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.5rem}
+.itin-card{background:#fff;border-radius:6px;overflow:hidden;text-decoration:none;color:inherit;display:block}
+.itin-card img{width:100%;height:195px;object-fit:cover;filter:brightness(.82)}
+.itin-body{padding:1.4rem}
+.itin-dur{font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--terra);font-weight:600;margin-bottom:.4rem}
+.itin-card h4{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--forest);margin-bottom:.4rem}
+.itin-card p{font-size:.82rem;color:var(--muted);font-weight:300;line-height:1.7;margin:0}
+.itin-tags{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.9rem}
+.itin-tag{font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;background:var(--cream);color:var(--muted);padding:.18rem .55rem;border-radius:3px}
+
+.tips-strip{background:var(--terra);padding:3.5rem 4rem}
+.tips-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;margin-top:2rem}
+.tip-card{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.18);padding:1.4rem;border-radius:6px;text-decoration:none;display:block;cursor:pointer;transition:background .2s,transform .2s}
+.tip-card:hover{background:rgba(255,255,255,.22);transform:translateY(-3px)}
+.tip-icon{font-size:1.4rem;margin-bottom:.7rem}
+.tip-card h4{font-size:.9rem;font-weight:600;color:#fff;margin-bottom:.35rem}
+.tip-card p{font-size:.78rem;color:rgba(255,255,255,.72);font-weight:300;line-height:1.6;margin:0}
+.tip-card .tip-link{margin-top:.8rem;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.5);border-top:1px solid rgba(255,255,255,.15);padding-top:.6rem}
+
+.footer{background:#0f1e0f;padding:4rem 4rem 2rem}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,.07)}
+.footer-brand{font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:300;color:#fff;margin-bottom:.7rem}
+.footer-brand span{color:var(--terra-light);font-style:italic}
+.footer-tagline{font-size:.8rem;color:rgba(255,255,255,.32);font-weight:300;line-height:1.7}
+.footer-col h4{font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.28);margin-bottom:.9rem}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:.45rem}
+.footer-col a{font-size:.83rem;color:rgba(255,255,255,.5);text-decoration:none;font-weight:300}
+.footer-col a:hover{color:rgba(255,255,255,.9)}
+.footer-bottom{display:flex;justify-content:space-between;padding-top:1.8rem;font-size:.76rem;color:rgba(255,255,255,.22)}
+
+@media(max-width:900px){
+  .nav{padding:0 1.5rem}.nav-links{display:none}
+  .hero-content{padding:0 1.5rem 3rem}
+  .stats{padding:2rem 1.5rem}
+  .dest-section,.feat-section,.itin-section,.tips-strip,.footer{padding:3rem 1.5rem}
+  .city-grid{grid-template-columns:1fr;grid-template-rows:auto}
+  .city-card{height:220px}
+  .feat-grid,.itin-grid{grid-template-columns:1fr}
+  .tips-grid{grid-template-columns:1fr 1fr}
+  .footer-top{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav-logo">La Dolce <span>Vita</span></a>
+  <div class="nav-right">
+    <ul class="nav-links">
+      <li><a href="destinations.html"><span class="eni">Destinations</span><span class="zhi">目的地</span></a></li>
+      <li><a href="itineraries.html"><span class="eni">Itineraries</span><span class="zhi">行程推荐</span></a></li>
+      <li><a href="blog.html"><span class="eni">Travel Tips</span><span class="zhi">旅行攻略</span></a></li>
+      <li><a href="about.html"><span class="eni">About</span><span class="zhi">关于</span></a></li>
+    </ul>
+    <div class="lang-toggle">
+      <button class="lang-btn active" onclick="setLang('en')">EN</button>
+      <button class="lang-btn" onclick="setLang('zh')">中文</button>
+    </div>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow"><span class="eni">The Complete Italy Travel Guide 2026</span><span class="zhi">2026 意大利完整旅行指南</span></p>
+    <h1><span class="eni">Discover<br><em>La Dolce Vita</em></span><span class="zhi">探索意大利<br><em>甜蜜生活</em></span></h1>
+    <p class="hero-sub en">From Renaissance Florence to the cliffs of the Amalfi Coast — expert guides to help you experience Italy the right way.</p>
+    <p class="hero-sub zh">从文艺复兴的佛罗伦萨到阿马尔菲的悬崖峭壁——专业旅行指南，带你以最完美的方式体验意大利。</p>
+    <div class="hero-btns">
+      <a href="destinations.html" class="btn-p"><span class="eni">Explore Destinations</span><span class="zhi">探索目的地</span></a>
+      <a href="itineraries.html" class="btn-o"><span class="eni">View Itineraries</span><span class="zhi">查看行程推荐</span></a>
+    </div>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="stat-n">20+</div><div class="stat-l"><span class="eni">Destinations</span><span class="zhi">目的地</span></div></div>
+  <div class="stat-div"></div>
+  <div class="stat"><div class="stat-n">50+</div><div class="stat-l"><span class="eni">Travel Guides</span><span class="zhi">旅行攻略</span></div></div>
+  <div class="stat-div"></div>
+  <div class="stat"><div class="stat-n">15+</div><div class="stat-l"><span class="eni">Itineraries</span><span class="zhi">精选行程</span></div></div>
+  <div class="stat-div"></div>
+  <div class="stat"><div class="stat-n">2026</div><div class="stat-l"><span class="eni">Fully Updated</span><span class="zhi">全面更新</span></div></div>
+</div>
+
+<div class="ad"><span class="eni">Advertisement</span><span class="zhi">广告位</span></div>
+
+<section class="dest-section">
+  <div class="dest-head">
+    <div>
+      <p class="kicker"><span class="eni">Top Destinations</span><span class="zhi">热门目的地</span></p>
+      <h2 class="sec-title"><span class="eni">Where Will You <em>Go?</em></span><span class="zhi">你想去<em>哪里？</em></span></h2>
+    </div>
+    <a href="destinations.html" class="view-all"><span class="eni">View all →</span><span class="zhi">查看全部 →</span></a>
+  </div>
+
+  <div class="city-grid">
+
+    <a href="florence.html" class="city-card">
+      <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=700&q=85" alt="Florence"/>
+      <div class="city-overlay">
+        <div class="city-tag">Tuscany · 3–4 <span class="eni">days</span><span class="zhi">天</span></div>
+        <div class="city-name">Florence<small>佛罗伦萨</small></div>
+        <div class="city-desc"><span class="eni">Uffizi, David & the Duomo</span><span class="zhi">乌菲齐、大卫像与大教堂</span></div>
+      </div>
+    </a>
+
+    <a href="rome.html" class="city-card">
+      <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=700&q=85" alt="Rome" style="object-position:center 40%"/>
+      <div class="city-overlay">
+        <div class="city-tag">Lazio · 4–5 <span class="eni">days</span><span class="zhi">天</span></div>
+        <div class="city-name">Rome<small>罗马</small></div>
+        <div class="city-desc"><span class="eni">Colosseum, Vatican & beyond</span><span class="zhi">斗兽场、梵蒂冈及更多</span></div>
+      </div>
+    </a>
+
+    <a href="venice.html" class="city-card">
+      <img src="https://images.unsplash.com/photo-1514890547357-a9ee288728e0?w=700&q=85" alt="Venice"/>
+      <div class="city-overlay">
+        <div class="city-tag">Veneto · 2–3 <span class="eni">days</span><span class="zhi">天</span></div>
+        <div class="city-name">Venice<small>威尼斯</small></div>
+        <div class="city-desc"><span class="eni">Canals, gondolas & Carnival</span><span class="zhi">运河、贡多拉与狂欢节</span></div>
+      </div>
+    </a>
+
+    <a href="amalfi.html" class="city-card">
+      <img src="https://images.unsplash.com/photo-1548585744-d6d5f18ebf3d?w=700&q=85" alt="Amalfi"/>
+      <div class="city-overlay">
+        <div class="city-tag">Campania · 3–5 <span class="eni">days</span><span class="zhi">天</span></div>
+        <div class="city-name">Amalfi Coast<small>阿马尔菲</small></div>
+        <div class="city-desc"><span class="eni">Positano, cliffs & the coast</span><span class="zhi">波西塔诺与壮丽海岸</span></div>
+      </div>
+    </a>
+
+    <a href="milan.html" class="city-card">
+      <img src="https://images.unsplash.com/photo-1610016302534-6f67f1c968d8?w=700&q=85" alt="Milan"/>
+      <div class="city-overlay">
+        <div class="city-tag">Lombardy · 2–3 <span class="eni">days</span><span class="zhi">天</span></div>
+        <div class="city-name">Milan<small>米兰</small></div>
+        <div class="city-desc"><span class="eni">Fashion, Duomo & The Last Supper</span><span class="zhi">时尚、大教堂与最后的晚餐</span></div>
+      </div>
+    </a>
+
+    <a href="naples.html" class="city-card">
+      <img src="https://images.unsplash.com/photo-1529260830199-42c24126f198?w=700&q=85" alt="Naples"/>
+      <div class="city-overlay">
+        <div class="city-tag">Campania · 2–3 <span class="eni">days</span><span class="zhi">天</span></div>
+        <div class="city-name">Naples<small>那不勒斯</small></div>
+        <div class="city-desc"><span class="eni">Pizza, Pompeii & Vesuvius</span><span class="zhi">披萨、庞贝与维苏威火山</span></div>
+      </div>
+    </a>
+
+    <a href="sicily.html" class="city-card">
+      <img src="https://images.unsplash.com/photo-1525874684015-58379d421a52?w=700&q=85" alt="Sicily"/>
+      <div class="city-overlay">
+        <div class="city-tag">Sicily · 5–7 <span class="eni">days</span><span class="zhi">天</span></div>
+        <div class="city-name">Sicily<small>西西里</small></div>
+        <div class="city-desc"><span class="eni">Ancient temples, Mt Etna & arancini</span><span class="zhi">古代神庙、埃特纳火山与炸饭团</span></div>
+      </div>
+    </a>
+
+    <a href="sardinia.html" class="city-card">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=700&q=85" alt="Sardinia"/>
+      <div class="city-overlay">
+        <div class="city-tag">Sardinia · 5–7 <span class="eni">days</span><span class="zhi">天</span></div>
+        <div class="city-name">Sardinia<small>撒丁岛</small></div>
+        <div class="city-desc"><span class="eni">White beaches & turquoise sea</span><span class="zhi">白色沙滩与绿松石色大海</span></div>
+      </div>
+    </a>
+
+    <a href="cinque-terre.html" class="city-card">
+      <img src="https://images.unsplash.com/photo-1499678329028-101435549a4e?w=700&q=85" alt="Cinque Terre"/>
+      <div class="city-overlay">
+        <div class="city-tag">Liguria · 2–3 <span class="eni">days</span><span class="zhi">天</span></div>
+        <div class="city-name">Cinque Terre<small>五渔村</small></div>
+        <div class="city-desc"><span class="eni">Five colourful coastal villages</span><span class="zhi">五个彩色海岸渔村</span></div>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<div class="ad"><span class="eni">Advertisement</span><span class="zhi">广告位</span></div>
+
+<section class="feat-section">
+  <div style="text-align:center;margin-bottom:.5rem">
+    <p class="kicker"><span class="eni">Why La Dolce Vita</span><span class="zhi">为何选择我们</span></p>
+    <h2 class="sec-title"><span class="eni">Travel Smarter, Not <em>Harder</em></span><span class="zhi">更聪明地旅行，而非<em>更辛苦</em></span></h2>
+  </div>
+  <div class="feat-grid">
+    <div class="feat-card">
+      <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=600&q=80" alt="Museum"/>
+      <div class="feat-body">
+        <div class="feat-icon">🎫</div>
+        <h4><span class="eni">Book Before You Go</span><span class="zhi">提前预订景点</span></h4>
+        <p class="en">Every guide tells you exactly what needs advance booking — so you never miss out.</p>
+        <p class="zh">每份攻略都告诉你哪些需要提前预订，让你不再错过任何体验。</p>
+      </div>
+    </div>
+    <div class="feat-card">
+      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Food"/>
+      <div class="feat-body">
+        <div class="feat-icon">🍝</div>
+        <h4><span class="eni">Real Food Advice</span><span class="zhi">真实的美食建议</span></h4>
+        <p class="en">Where locals eat, what dishes define each city, and which tourist traps to skip.</p>
+        <p class="zh">当地人真正用餐的地方、每个城市的代表性菜肴，以及哪些游客陷阱要避开。</p>
+      </div>
+    </div>
+    <div class="feat-card">
+      <img src="https://images.unsplash.com/photo-1568395556688-1de9a1a64a64?w=600&q=80" alt="Tuscany"/>
+      <div class="feat-body">
+        <div class="feat-icon">🗺</div>
+        <h4><span class="eni">Street-Level Detail</span><span class="zhi">街区级别的细节</span></h4>
+        <p class="en">Not just "visit the Colosseum" — exactly where to stand, when to go, what to skip.</p>
+        <p class="zh">不只是"参观斗兽场"——告诉你站在哪里、何时前往、哪些可以跳过。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="itin-section">
+  <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:.5rem">
+    <div>
+      <p class="kicker"><span class="eni">Ready-Made Plans</span><span class="zhi">精选行程方案</span></p>
+      <h2 class="sec-title"><span class="eni">Popular <em>Itineraries</em></span><span class="zhi">热门<em>行程推荐</em></span></h2>
+    </div>
+    <a href="itineraries.html" class="view-all" style="color:var(--terra)"><span class="eni">All →</span><span class="zhi">全部 →</span></a>
+  </div>
+  <div class="itin-grid">
+    <a href="itineraries.html" class="itin-card">
+      <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=600&q=85" alt="Rome" style="object-position:center 40%"/>
+      <div class="itin-body">
+        <div class="itin-dur">10 <span class="eni">Days</span><span class="zhi">天</span></div>
+        <h4><span class="eni">Classic Italy</span><span class="zhi">经典意大利</span></h4>
+        <p class="en">Rome → Florence → Venice. The essential Italian triangle, done right.</p>
+        <p class="zh">罗马→佛罗伦萨→威尼斯。意大利经典黄金三角。</p>
+        <div class="itin-tags"><span class="itin-tag">Rome</span><span class="itin-tag">Florence</span><span class="itin-tag">Venice</span></div>
+      </div>
+    </a>
+    <a href="itineraries.html" class="itin-card">
+      <img src="https://images.unsplash.com/photo-1548585744-d6d5f18ebf3d?w=600&q=85" alt="Amalfi"/>
+      <div class="itin-body">
+        <div class="itin-dur">12 <span class="eni">Days</span><span class="zhi">天</span></div>
+        <h4><span class="eni">Southern Dream</span><span class="zhi">南意大利梦境</span></h4>
+        <p class="en">Naples → Amalfi Coast → Sicily. The Italy most tourists never see.</p>
+        <p class="zh">那不勒斯→阿马尔菲海岸→西西里。</p>
+        <div class="itin-tags"><span class="itin-tag">Naples</span><span class="itin-tag">Amalfi</span><span class="itin-tag">Sicily</span></div>
+      </div>
+    </a>
+    <a href="itineraries.html" class="itin-card">
+      <img src="https://images.unsplash.com/photo-1568395556688-1de9a1a64a64?w=600&q=85" alt="Tuscany"/>
+      <div class="itin-body">
+        <div class="itin-dur">7 <span class="eni">Days</span><span class="zhi">天</span></div>
+        <h4><span class="eni">Tuscany Deep Dive</span><span class="zhi">深度托斯卡纳</span></h4>
+        <p class="en">Florence, Siena, Chianti & San Gimignano. Slow travel at its best.</p>
+        <p class="zh">佛罗伦萨、锡耶纳、基安蒂。慢旅行的极致体验。</p>
+        <div class="itin-tags"><span class="itin-tag">Florence</span><span class="itin-tag">Siena</span><span class="itin-tag">Chianti</span></div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<div class="tips-strip">
+  <p class="kicker" style="color:rgba(255,255,255,.6)"><span class="eni">Plan & Book</span><span class="zhi">规划与预订</span></p>
+  <h2 style="font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:300;color:#fff;margin-bottom:.4rem">
+    <span class="eni">Book Your Italy Trip</span><span class="zhi">预订你的意大利之旅</span>
+  </h2>
+  <div class="tips-grid">
+    <a class="tip-card" href="#" target="_blank" rel="noopener">
+      <div class="tip-icon">🎫</div>
+      <h4><span class="eni">Museum Tickets</span><span class="zhi">景点门票</span></h4>
+      <p class="en">Uffizi, Colosseum, Vatican. Skip the queue.</p>
+      <p class="zh">乌菲齐、斗兽场、梵蒂冈。跳过排队。</p>
+      <div class="tip-link">GetYourGuide →</div>
+    </a>
+    <a class="tip-card" href="#" target="_blank" rel="noopener">
+      <div class="tip-icon">🚆</div>
+      <h4><span class="eni">Train Tickets</span><span class="zhi">火车票</span></h4>
+      <p class="en">Rome → Florence in 1h 30m. Fast & easy.</p>
+      <p class="zh">罗马→佛罗伦萨1.5小时。快捷便利。</p>
+      <div class="tip-link">Omio →</div>
+    </a>
+    <a class="tip-card" href="#" target="_blank" rel="noopener">
+      <div class="tip-icon">🏨</div>
+      <h4><span class="eni">Hotels in Italy</span><span class="zhi">意大利酒店</span></h4>
+      <p class="en">Compare hundreds of hotels. Best prices.</p>
+      <p class="zh">比较数百家酒店，享受最优价格。</p>
+      <div class="tip-link">Booking.com →</div>
+    </a>
+    <a class="tip-card" href="#" target="_blank" rel="noopener">
+      <div class="tip-icon">🚢</div>
+      <h4><span class="eni">Tours & Experiences</span><span class="zhi">旅游体验</span></h4>
+      <p class="en">Boat tours, food tastings & day trips.</p>
+      <p class="zh">游船出行、美食品鉴与一日游。</p>
+      <div class="tip-link">Viator →</div>
+    </a>
+  </div>
+</div>
+
+<div class="ad"><span class="eni">Advertisement</span><span class="zhi">广告位</span></div>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand">La Dolce <span>Vita</span></div>
+      <p class="footer-tagline en">Italy's most comprehensive travel guide. Expert advice on every destination — completely free.</p>
+      <p class="footer-tagline zh">意大利最全面的旅行指南。涵盖每个目的地的专业建议——完全免费。</p>
+    </div>
+    <div class="footer-col">
+      <h4><span class="eni">Destinations</span><span class="zhi">目的地</span></h4>
+      <ul>
+        <li><a href="rome.html">Rome / 罗马</a></li>
+        <li><a href="florence.html">Florence / 佛罗伦萨</a></li>
+        <li><a href="venice.html">Venice / 威尼斯</a></li>
+        <li><a href="amalfi.html">Amalfi / 阿马尔菲</a></li>
+        <li><a href="milan.html">Milan / 米兰</a></li>
+        <li><a href="naples.html">Naples / 那不勒斯</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4><span class="eni">Plan</span><span class="zhi">规划</span></h4>
+      <ul>
+        <li><a href="itineraries.html"><span class="eni">Itineraries</span><span class="zhi">行程推荐</span></a></li>
+        <li><a href="blog.html"><span class="eni">Travel Tips</span><span class="zhi">旅行攻略</span></a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4><span class="eni">About</span><span class="zhi">关于</span></h4>
+      <ul>
+        <li><a href="about.html"><span class="eni">About Us</span><span class="zhi">关于我们</span></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 La Dolce Vita Italy Travel Guide.</p>
+    <p>Made with ❤️ <span class="eni">for Italy lovers</span><span class="zhi">献给意大利爱好者</span></p>
+  </div>
+</footer>
+
+<script>
+function setLang(l){
+  document.querySelectorAll('.lang-btn').forEach((b,i)=>b.classList.toggle('active',i===(l==='en'?0:1)));
+  document.body.classList.toggle('zh-mode',l==='zh');
+}
+</script>
+</body>
+</html>
